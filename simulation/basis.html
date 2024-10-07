@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="css/basis.css">
+</head>
+<style>
+    .previous{
+    display: block;
+    float:left;
+    background-color: #04AA6D;
+    color: white;
+    font-size: 18px;
+    margin-top: 0.5rem;
+    align-content: center;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    width:8rem;
+}
+.previous:hover {
+  background-color: #ada;
+  color: black;
+}
+.subbtn{
+        height:auto;
+        width:auto;
+        background-color:#81cdc6;
+        font-size: 1.2rem;
+        border: 1px solid teal;
+        margin: 0.5rem 0.2rem 0.2rem 0.2rem;
+    }
+</style>
+<body>
+    <h2 class="pagehead">Basis, Dimension and Co-ordinates</h2>
+    <p style="margin-left: 1rem;">NOTE: Consider the vector space R<sup>2</sup> over R</p>
+    <div class="example">
+        <div class="excol">
+            <h3>I. Example</h3><button class="subbtn" id="calcbtn"  onclick="exmp1()">i. B = {(1, 0), (0, 1)} &#8838; R<sup>2</sup></button>
+            
+                <ul id="exmpRes1" style="display: none;">
+                    <li>B is basis, dim R<sup>2</sup> = 2</li>
+                    <li>Coordinates of (a, b) are a and b w.r.t. the basis B</li>
+                    <li>In particular, coordinates of (1, 2) are 1 and 2 w.r.t. the basis B.</li>
+                </ul>
+                </div>
+                
+        <div class="excol">
+            <img id="eximg1" src="images/bex1.1.PNG" alt="basis example" height="250vh" width="auto">
+        </div><br>
+        <div class="excol">
+            <button class="subbtn" id="calcbtn"  onclick="exmp2()">ii. B = {(1, 1), (1, 2)} &#8838; R<sup>2</sup></button>
+                <ul id="exmpRes2" style="display: none;">
+                <li>B is basis, dim R<sup>2</sup> = 2</li>
+                <li>Coordinates of (a, b) are 2a-b and b-a w.r.t. the basis B</li>
+                <li>In particular, coordinates of (1, 2) are 0 and 1 w.r.t. the basis B.</li>
+            </ul>
+    
+        </div>
+        <div class="excol">
+            <img id="eximg2" src="images/bex1.1.PNG" alt="basis example" height="250vh" width="auto">
+        </div>
+    </div>
+    <div class="cons">
+        <h3>II. Construction of basis of R<sup>2</sup></h3>
+        <div class="construction">
+            <div class="conscol">
+                
+                <p><ul><li>Choose  a &ne; 0 <br><span style="color: blueviolet;">[ For example let a = (2, 3) ]</span></li> <li><button onclick="document.getElementById('bcons1').src='images/bcons1.png'" style="margin-top: 5px;">Geometry</button></li></ul></p>
+                <img src="images/bex1.1.PNG" alt="basis" id="bcons1">
+            </div>
+            <div class="conscol">
+                <p><ul><li>Choose  b &notin; span({a}) <br> <span style="color: blueviolet;">[ For example let b = (1, 4) ]</span></li><li><button style="margin-top: 5px;" onclick="document.getElementById('bcons2').src='images/bcons2.PNG';"">Geometry</button></li></ul></p>
+                <img src="images/bex1.1.PNG" alt="basis" id="bcons2">
+            </div>
+            
+            <div class="conscol">
+                <h3>Example</h3>
+                <ul><li>B = {a, b} is a basis. </li>
+                    <li>For example {(2, 3), (1, 4)} is a basis. </li>
+                    <li>For example {(2, 3), (4, 6)} is not a basis.</li>
+                
+            </ul>
+                <br>
+            
+            </div>
+            
+        </div>
+    </div>
+    <div class="check">
+        <h3>III. Checking whether a given nonempty subset B of R<sup>2</sup> is a basis or not?</h3>
+        <div class="checkcondition">
+            <div class="ckcol">
+                <button class="subbtn" onclick="step1()">Step 1</button>
+                <div id="stp1" style="display: none;" >
+                    <p class="checkblock"><ul><li>If 0 &isin; B, <strong>B is not a basis.</strong></li>
+                        <li>Otherwise go to Step 2.</li></ul></p>
+                </div>
+                
+            </div>
+            <div class="ckcol">
+                <button class="subbtn" onclick="step2()">Step 2</button>
+                <div id="stp2" style="display: none;" >
+                <ul>
+                    <li>If no. of elements in B is not 2, then B is not a basis.</li>
+                    <li>Otherwise go to Step 3.</li>
+                </ul>
+            </div>
+            </div>
+            <div class="ckcol">
+                <button class="subbtn" onclick="step3()">Step 3</button>
+                <div id="stp3" style="visibility:hidden;" >
+                <p><ul><p>If B = {a, b}&subset;R<sup>2</sup>, then it may or may not be a basis. <br> Infact</p>
+                    <li>b &isin; Span({a}) &#8658; <strong>B is not basis</strong></li>
+                <li>b &notin; Span({a}) &#8658; <strong>B is basis</strong></li>
+                </ul>
+                </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <p class="note" style="background-color: lightyellow;">NOTE: Apply the method on various subsets of R<sup>2</sup></p>
+    <p class="note" style="color:darkblue; font-size: 1.5rem; border:1px solid darkblue;">NOTE: Try it yourself for the vector space R<sup>n</sup> over R for some other values of n</p>
+    <p style="float: center; align-content:right;">
+            <a href="./" class="previous">&laquo; Previous</a>
+        </p>
+</body>
+<script src="js/basis.js"></script>
+<script>
+    function step1(){
+        document.getElementById('stp1').style.display= "";
+    }
+    function step2(){
+        document.getElementById('stp2').style.display= "";
+    }
+    function step3(){
+        document.getElementById('stp3').style.visibility= "";
+    }
+</script>
+</html>

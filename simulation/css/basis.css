@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 1rem;
+}
+.pagehead{
+  display: block;
+  text-align: center;
+  border: 1px solid #87ceeb;;
+  background-color: #87ceeb;
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+  float:center;
+  margin: 0.5rem;
+  font-size: 32px;
+}
+
+.example{
+  background-color: lightyellow;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  margin: 0.5rem;
+}
+
+.example p{
+  font-size: 18px;
+}
+
+.example {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.excol {
+  border-radius: 8px;
+  background-color: lightyellow;
+}
+
+@media (max-width: 1024px) {
+  .example {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cons{
+  background-color: lightyellow;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  margin: 0.5rem;
+}
+
+.cons p{
+  font-size: 20px;
+}
+
+.construction {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.conscol {
+  border-radius: 8px;
+  background-color: lightyellow;
+}
+
+@media (max-width: 1024px) {
+  .construction {
+    grid-template-columns: 1fr;
+  }
+}
+.conscol img{
+  height: 26vh;
+  width: auto;
+}
+
+.check{
+  background-color: lightyellow;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  margin: 0.5rem;
+
+}
+
+.checkcondition {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.ckcol {
+  border-radius: 8px;
+  background-color: lightyellow;
+  font-size: 20px;
+}
+
+@media (max-width: 1024px) {
+  .checkcondition {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.note{
+  text-align: center;
+  float: center;
+  margin: 1rem;
+  background-color: lightgray;
+}
+
+
+.animate-character
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 20% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4s linear infinite;
+  display: inline-block;
+      font-size: 20px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}

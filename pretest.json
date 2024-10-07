@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Consider the vector space R<sup>2</sup> over R. Then (2, 7) can be written as a linear combination of elements of which of the following sets?",
+      "answers": {
+        "a": "S<sub>1</sub>={(1, 3), (2, 6)}",
+        "b": "S<sub>2</sub>={(1, 0), (0, 0), (2, 0))}",
+        "c": "S<sub>3</sub>={(0, 1), (1, 2), (1, 1)}",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Consider the vector space P<sub>2</sub>(x) over R.Then which of the following sets can span P<sub>2</sub>(x)?",
+      "answers": {
+        "a": "S={1, 2x, x<sub>2</sub>+2}",
+        "b": "S={x-x<sup>2</sup>, -x, x<sup>2</sup>}",
+        "c": "S={1, 0, x<sup>2</sup>-4}",
+        "d": "S={1, -5x}"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Consider the vector space R<sup>3</sup> over R.Then which of the following sets can span R<sup>3</sup>?",
+      "answers": {
+        "a": "S={(2, 0, -2), (3, 1, 1), (2, 0, 0) (0, 0, 1)}",
+        "b": "S={(1, 0, 2), (1, -1, 1), (0, 0, 0)}",
+        "c": "S={(-1, 0, 1), (1, 0, 0) (0, 0, 1)}",
+        "d": "S={(1, 0, 0), (2, 1, 0) (0, 1, 0)}"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Consider the vector space R<sup>2</sup> over R. Then which of the following sets cannot span R<sup>2</sup>?",
+      "answers": {
+        "a": "S={(1, 4), (2, -8)}",
+        "b": "S={(1, 2), (0, 0), (3, 6)}",
+        "c": "S={(-3, 4), (6, 7)}",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. Consider the vector space R<sup>2</sup> over R. Then a non-trivial linear combination of elements of which of the following sets equals zero?",
+      "answers": {
+        "a": "S={(-2, 3), (1, 4)}",
+        "b": "S={(-2, 0), (0, 4), (0, 0)}",
+        "c": "S={(3, 1), (6, 2)}",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}

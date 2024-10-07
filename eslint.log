@@ -1,0 +1,14 @@
+
+/home/runner/work/exp-Linear-dimension-coordinates-dei/exp-Linear-dimension-coordinates-dei/experiment/simulation/js/basis.js
+   1:10  warning  'ck21y' is defined but never used   no-unused-vars
+   5:10  warning  'ck21n' is defined but never used   no-unused-vars
+  11:10  warning  'ck22y' is defined but never used   no-unused-vars
+  16:10  warning  'ck22n' is defined but never used   no-unused-vars
+  22:10  warning  'ck23y' is defined but never used   no-unused-vars
+  27:10  warning  'ck23n' is defined but never used   no-unused-vars
+  33:10  warning  'reason' is defined but never used  no-unused-vars
+  37:10  warning  'exmp1' is defined but never used   no-unused-vars
+  42:10  warning  'exmp2' is defined but never used   no-unused-vars
+
+✖ 9 problems (0 errors, 9 warnings)
+

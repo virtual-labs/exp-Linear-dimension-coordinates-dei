@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="css/li.css">
+</head>
+<style>
+.next{
+    background-color: #04AA6D;
+    color: white;
+    font-size: 18px;
+    margin-top: 0.5rem;
+    align-content: center;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    width:8rem;
+    float:right;
+}
+.next:hover {
+  background-color: #ada;
+  color: black;
+}
+.subbtn{
+        height:auto;
+        width:auto;
+        background-color:#81cdc6;
+        font-size: 1.2rem;
+        border: 1px solid teal;
+        margin: 0.5rem 0.2rem 0.2rem 0.2rem;
+    }
+</style>
+<body>
+    <h2 class="pagehead">Linear Independence of S &sube; R<sup>2</sup></h2>
+    <div class="case1">
+     
+        <h3>CASE 1 :<button class="subbtn" id="calcbtn" onclick="caseOne()">S = &#981; </button></h3>
+        <!--<p>S is Linearly Dependent</p>
+        <p> 0 = 0.x &nbsp; <input id="btn1" type="submit" value="True"> / <input id="btn2" type="submit" value="False"></p>
+        <h4>Reason:</h4>
+        <p>E.g.: S={0, x, y}<br> Then 1.0 + 0.x + 0.y = 0</p>-->
+        <p id="result"></p>
+
+    </div>
+    <div class="case2">
+        <div class="c2column">
+            <h3>CASE 2 : </h3><button class="subbtn" id="calcbtn"  onclick="case2()">(i) S = {a}, a &ne; 0 </button>
+            <p id="result1"></p>
+            <h4 id="reason"></h4>
+            <p id="result11" style="visibility: hidden;">&alpha; . a = 0
+            &#8658; &alpha; = 0, &alpha; &isin; F</p>
+                
+            <button class="subbtn" id="calcbtn" onclick="case2_1()">(ii) S = {0}, a = 0</button>
+            <p id="result2"></p>
+            <h4 id="reson2"></h4>
+            <p id="result21" style="visibility: hidden;">&alpha; . 0 = 0, &alpha; &ne; 0, &alpha; &isin; F</p> 
+        </div>
+        <div class="c2column">
+            <img src="images/c2li.png" alt="linearly independent">
+        </div>
+        <div class="c2column">
+            <img src="images/c2ld.png" alt="linearly dependent">
+        </div>
+    <!--<div class="container">
+            <div class="column">
+                <p>case i</p>
+            </div>
+            <div class="column">
+                <p>case ii</p>
+            </div>
+            <div class="column">
+                <p>case iii</p>
+            </div>
+        </div>-->
+    </div>
+    <div class="case3">
+        <div class="c3column">
+            <h3>CASE 3 : </h3><button class="subbtn" id="calcbtn"  onclick="case3()">S &ne; {.} , &#981; and 0 &notin; S </button>
+            <p id="c3res1" style="visibility: hidden;"><b>Reason :</b><br> To understand the reason let S = {a, b}<br><br>
+                b &isin; L(S<sub>1</sub>), where S<sub>1</sub> = {a} 
+                &#8658;  S is LINEARLY DEPENDENT<br>
+                b &notin; L(S<sub>1</sub>). where S<sub>1</sub> = {a}
+                &#8658; S is LINEARLY INDEPENDENT
+            </p>
+        </div>
+        <div class="c3column">
+            <img src="images/cs3ld.png" alt="linearly dependent">
+        </div>
+        <div class="c3column">
+            <img src="images/cs3li.png" alt="linearly independent">
+        </div>
+        
+    </div>
+    <div class="case5">
+        <h3>Case 4 :</h3><button class="subbtn" id="calcbtn"  onclick="case4()"> 0 &isin; S </button>
+        <p id="c4res" style="visibility: hidden;"><b>Reason :</b><br>0 = &alpha; . 0, &alpha; &ne; 0, &alpha; &isin; F</p>
+        <p id="c4ques" style="display: none;"> What do you infer? <input id="btn1" type="submit" onclick="c5ld('btn1'); this.style.backgroundColor = 'green'; this.style.color = '#FFF'; btn2.style.backgroundColor = 'lightgrey'; " value="S is Linearly Dependent"> / <input id="btn2" type="submit" onclick="c5li('btn2'); this.style.backgroundColor = 'red'; btn1.style.backgroundColor = 'lightgrey'; this.style.color = '#FFF';" value="S is Linearly Independent"></p>
+        <p id="c5ld"></p>
+        <p id="c5li"></p>
+    </div>
+    <div class="case4">
+        <div class="c4column">
+            <h3>Example 1: </h3><button class="subbtn" id="calcbtn"  onclick="exmp1()"> S = {(1, 1), (1, 2)}</button>
+            
+            <p id="exmpres" style="visibility: hidden;">S is LINEARLY INDEPENDENT</p>
+            <h4 id="resexmp1"></h4>
+            <p id="exmpres1.1" style="visibility: hidden;">b &equiv; (1, 2) &notin; L({(1, 1)})</p>
+            <h4 id="resexmp1.1"></h4>
+                <p id="res2exp" style="visibility: hidden;"> &alpha; . (1, 1) + &beta; . (1, 2) = (0, 0)<br>
+                &emsp; &#8658; (&alpha; + &beta; , &alpha; + 2&beta;) = (0, 0)<br>
+                &emsp; &#8658; &alpha; + &beta; = 0 , &alpha; + 2&beta; = 0<br>
+                &emsp; &#8658; &alpha; = 0 , &beta; = 0</p>
+            
+            
+            </div>
+            <div class="c4column">
+                <img src="images/c4li.png" alt="linearly dependent">
+            </div>
+            <div class="c4column">
+            <h3>Example 2:</h3><button class="subbtn" id="calcbtn"  onclick="exmp2()">S = {(1, 1), (3, 3)}</button>
+            <p id="exmpres2" style="visibility: hidden;">S is LINEARLY DEPENDENT</p>
+                <h4 id="abh4"></h4>
+                <p id="exmpres2.1" style="visibility: hidden;">b &equiv; (3, 3) &isin; L({(1, 1)}) &#8658;</p>
+                 <h4 id="abch4"></h4>
+             <p id="res3exp" style="visibility: hidden;">
+                (3, 3) = 3(1, 1)<br>
+                 3(1, 1) + (-1) (3, 3) = (0, 0)
+            </p>
+            
+        </div>
+      
+        <div class="c4column">
+            <img src="images/c4ld.png" alt="linearly independent">
+        </div>
+    </div>
+    <p style="float:center; align-content:right;">
+      <a href="./basis.html" class="next" >Next &raquo;</a>
+</p><br>
+    
+<script src="../assets/js/iframeResize.js"></script></body>
+<script>
+
+
+    function caseOne(){
+        document.getElementById('result').innerHTML="S is LINEARLY INDEPENDENT, by definition.";
+    }
+    function case2(){
+        
+        document.getElementById('result1').innerHTML="S is LINEARLY INDEPENDENT";
+        document.getElementById('reason').innerHTML="Reason :";
+        document.getElementById('result11').style.visibility= "visible"
+        
+    }
+    function case2_1(){
+        document.getElementById('result2').innerHTML="S is LINEARLY DEPENDENT.";
+        document.getElementById('reson2').innerHTML="Reason:";
+        document.getElementById('result21').style.visibility= "visible";
+    }
+    function case3(){
+        document.getElementById('c3res1').style.visibility= "visible";
+    }
+    function case4(){
+        document.getElementById('c4res').style.visibility= "visible";
+        document.getElementById('c4ques').style.display= "";
+    }
+    function exmp1(){
+        document.getElementById('exmpres').style.visibility= "visible";
+        
+        document.getElementById('resexmp1').innerHTML="Reason 1";
+        document.getElementById('resexmp1.1').innerHTML="Reason 2";
+        document.getElementById('exmpres1.1').style.visibility= "visible"
+        document.getElementById('res2exp').style.visibility= "visible"
+        
+    }
+    function exmp2(){
+        document.getElementById('exmpres2').style.visibility= "visible";
+        document.getElementById('c4ques').style.display= "";
+        document.getElementById('abh4').innerHTML="Reason 1";
+        document.getElementById('abch4').innerHTML="Reason 2";
+        document.getElementById('exmpres2.1').style.visibility= "visible";
+        document.getElementById('res3exp').style.visibility= "visible";
+    }
+   function c5ld(){
+       document.getElementById('c5ld').innerHTML='CORRECT!<br> Reason: S={0, x, y} then 1.0 + 0.x + 0.y = 0';
+       document.getElementById('c5li').innerHTML='';
+   }
+   function c5li(){
+       document.getElementById('c5li').innerHTML='INCORRECT!<br> Reason: S={0, x, y} then 1.0 + 0.x + 0.y = 0';
+       document.getElementById('c5ld').innerHTML='';
+   }
+</script>
+</html>

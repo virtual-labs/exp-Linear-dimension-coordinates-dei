@@ -1,0 +1,107 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Consider the vector space R<sup>2</sup> over R. Which of the following sets is linearly independent?",
+      "answers": {
+        "a": "S<sub>1</sub>={(3, 9), (1, 3)}",
+        "b": "S<sub>2</sub>={(1, 2), (0, 0)}",
+        "c": "S<sub>3</sub>={(2, 7), (1, 4), (1, 0)}",
+        "d": "S<sub>4</sub>={(3, 6), (1, 5)}"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Consider the vector space R<sup>2</sup> over R. Which of the following sets is linearly dependent?",
+      "answers": {
+        "a": "S<sub>1</sub>={(2, 6), (0, 3)}",
+        "b": "S<sub>2</sub>={(1, 0), (0, 1)}",
+        "c": "S<sub>3</sub>={(3, 4), (4, 9)}",
+        "d": "S<sub>4</sub>={(1, 2), (2, 4)}"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Consider the vector space R<sup>3</sup> over R. Which of the following is its basis?",
+      "answers": {
+        "a": "B<sub>1</sub>={(1, 0, 0), (0, 2, 2), (0, 0, 0)}",
+        "b": "B<sub>2</sub>={(1, 0, 0), (0, 1, 3), (0, 2, 4)}",
+        "c": "B<sub>3</sub>={(2, 3, 0), (1, 1, 0), (1, 0, 0)}",
+        "d": "B<sub>4</sub>={(1, 0, 2), (1, 0, 4)}"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Consider the vector space P<sub>2</sub>(x) over R. Which of the following is its basis?",
+      "answers": {
+        "a": "B<sub>1</sub>={1, 0, x<sub>2</sub>}",
+        "b": "B<sub>2</sub>={2, x+2, x<sup>2</sup>+4}",
+        "c": "B<sub>3</sub>={1+x, 1+x<sup>2</sup>}",
+        "d": "B<sub>4</sub>={2+x, -x, 2}"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. Consider the vector space R<sup>2</sup> over R. Which of the following is true?",
+      "answers": {
+        "a": "Dim of R<sup>2</sup> > 2, dim &straightphi; = 1",
+        "b": "Dim of R<sup>2</sup> < 2, dim &straightphi; = 0",
+        "c": "Dim of R<sup>2</sup> = 2, dim &straightphi; = 0",
+        "d": "Dim of R<sup>2</sup> &ne; 2, dim &straightphi; = 1"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "6. Consider the vector space R<sup>2</sup> over R. Co-ordinates of (1, 2)&isin;R<sup>2</sup> w.r.t. the basis {(0, 1) , (-1, 0)} are:",
+      "answers": {
+        "a": "1 & 2",
+        "b": "-1 & 2",
+        "c": "-2 & 1",
+        "d": "2 & -1"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    }
+  ]
+}
