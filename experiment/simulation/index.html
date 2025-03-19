@@ -30,6 +30,17 @@
         border: 1px solid teal;
         margin: 0.5rem 0.2rem 0.2rem 0.2rem;
     }
+    input{
+        width: 3rem;
+        font-size: 1rem;
+    }
+    label{
+        font-size: 1.3rem;
+        
+    }
+    #resultd{
+        font-size: 1.3rem;
+    }
 </style>
 <body>
     <h2 class="pagehead">Linear Independence of S &sube; R<sup>2</sup></h2>
@@ -133,12 +144,193 @@
         <div class="c4column">
             <img src="images/c4ld.png" alt="linearly independent">
         </div>
+
+        <div class="c4column">
+            <h3>Example 3: </h3>
+            <label>S = {(<input type="text" id="vector1" placeholder="x1,y1">), (<input type="text" id="vector2" placeholder="x2,y2">)} </label>
+            <br><br>
+            <button onclick="checkDependence()">Submit</button>
+
+            <p id="exmp3res"></p>
+
+            <h4 id="reason1"></h4>
+                <p id="exmpres3.1"></p>
+                
+            
+            <!-- <h4 id="resexmp1"></h4>
+            <p id="exmpres1.1" style="visibility: hidden;">b &equiv; (1, 2) &notin; L({(1, 1)})</p> -->
+
+            <!-- <h4 id="resexmp1.1"></h4>
+                <p id="res2exp" style="visibility: hidden;"> &alpha; . (1, 1) + &beta; . (1, 2) = (0, 0)<br>
+                &emsp; &#8658; (&alpha; + &beta; , &alpha; + 2&beta;) = (0, 0)<br>
+                &emsp; &#8658; &alpha; + &beta; = 0 , &alpha; + 2&beta; = 0<br>
+                &emsp; &#8658; &alpha; = 0 , &beta; = 0</p> -->
+            
+            
+            </div>
+            <div class="c4column">
+                <canvas id="vectorCanvas" width="300" height="300"></canvas>
+                <br>
+                <p id="resultd"></p>
+            </div>
+           
     </div>
     <p style="float:center; align-content:right;">
       <a href="./basis.html" class="next" >Next &raquo;</a>
 </p><br>
     
 </body>
+
+<script>
+    let canvas = document.getElementById("vectorCanvas");
+    let ctx = canvas.getContext("2d");
+    const maxInput = 9; // Maximum allowed input value
+
+    function checkDependence() {
+        let vec1 = document.getElementById("vector1").value.trim();
+        let vec2 = document.getElementById("vector2").value.trim();
+
+        if (!validateInput(vec1) || !validateInput(vec2)) {
+            alert("Please enter valid numeric values within the range [-9, 9] for both vectors.");
+            return;
+        }
+
+        let vec1Arr = vec1.split(",").map(Number);
+        let vec2Arr = vec2.split(",").map(Number);
+
+        let x1 = vec1Arr[0], y1 = vec1Arr[1];
+        let x2 = vec2Arr[0], y2 = vec2Arr[1];
+
+        let resultText = "", resultText2 = "", resultText3 = "";
+
+        if ((x1 === 0 && y1 === 0) || (x2 === 0 && y2 === 0)) {
+            resultText = "Linearly Dependent (Zero Vector Present)";
+            resultText2 = "S is LINEARLY DEPENDENT (Zero Vector Present)";
+        } 
+        else if (x1 * y2 === x2 * y1) {
+            reason = "Reason";
+            resultText = "Linearly Dependent";
+            resultText2 = "S is LINEARLY DEPENDENT";
+            resultText3 = `b ≡ (${x2},${y2}) ∈ L({(${x1},${y1})})`;
+            
+        } else {
+            reason = "Reason";
+            resultText = "Linearly Independent";
+            resultText2 = "S is LINEARLY INDEPENDENT";
+            resultText3 = `b ≡ (${x2},${y2}) ∉ L({(${x1},${y1})})`;
+           
+        }
+
+        document.getElementById("reason1").innerText = reason;
+        document.getElementById("resultd").innerText = resultText;
+        document.getElementById("exmp3res").innerText = resultText2;
+        document.getElementById("exmpres3.1").innerText = resultText3;
+
+        drawVectors(x1, y1, x2, y2);
+    }
+
+    function validateInput(input) {
+        let values = input.split(",");
+        if (values.length !== 2) return false;
+        
+        for (let val of values) {
+            let num = Number(val.trim());
+            if (isNaN(num) || num < -maxInput || num > maxInput) return false;
+        }
+        return true;
+    }
+
+    function drawVectors(x1, y1, x2, y2) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        let scale = (canvas.width / 1.6) / maxInput;
+
+        let centerX = canvas.width * 0.3; 
+        let centerY = canvas.height * 0.7;
+
+        drawGrid(centerX, centerY, scale);
+
+        function drawInfiniteLine(x, y, color) {
+            if (x === 0 && y === 0) return;
+            let t = 10;
+            let startX = centerX - x * scale * t;
+            let startY = centerY + y * scale * t;
+            let endX = centerX + x * scale * t;
+            let endY = centerY - y * scale * t;
+
+            ctx.beginPath();
+            ctx.moveTo(startX, startY);
+            ctx.lineTo(endX, endY);
+            ctx.strokeStyle = color;
+            ctx.lineWidth = 2;
+            ctx.stroke();
+        }
+
+        function drawPoint(x, y, color) {
+            let screenX = centerX + x * scale;
+            let screenY = centerY - y * scale;
+
+            ctx.beginPath();
+            ctx.arc(screenX, screenY, 5, 0, 2 * Math.PI);
+            ctx.fillStyle = color;
+            ctx.fill();
+
+            ctx.font = "14px Arial";
+            ctx.fillStyle = "black";
+            ctx.fillText(`(${x},${y})`, screenX + 5, screenY - 5);
+        }
+
+        drawInfiniteLine(x1, y1, "red");
+        drawInfiniteLine(x2, y2, "blue");
+
+        drawPoint(x1, y1, "red");
+        drawPoint(x2, y2, "blue");
+    }
+
+    function drawGrid(centerX, centerY, scale) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.strokeStyle = "#ddd";
+        ctx.font = "12px Arial";
+        ctx.fillStyle = "black";
+
+        for (let i = -maxInput; i <= maxInput; i++) {
+            let xPos = centerX + i * scale;
+            let yPos = centerY - i * scale;
+
+            ctx.beginPath();
+            ctx.moveTo(xPos, 0);
+            ctx.lineTo(xPos, ctx.canvas.height);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(0, yPos);
+            ctx.lineTo(ctx.canvas.width, yPos);
+            ctx.stroke();
+
+            if (i !== 0) {
+                ctx.fillText(i, xPos - 5, centerY + 15);
+                ctx.fillText(i, centerX - 15, yPos + 5);
+            }
+        }
+
+        ctx.beginPath();
+        ctx.moveTo(centerX, 0);
+        ctx.lineTo(centerX, ctx.canvas.height);
+        ctx.moveTo(0, centerY);
+        ctx.lineTo(ctx.canvas.width, centerY);
+        ctx.strokeStyle = "black";
+        ctx.lineWidth = 2;
+        ctx.stroke();
+    }
+
+    window.onload = function () {
+        let centerX = canvas.width * 0.3;
+        let centerY = canvas.height * 0.7;
+        let scale = (canvas.width / 1.6) / maxInput;
+        drawGrid(centerX, centerY, scale);
+    };
+</script>
+
 <script>
 
 
