@@ -14,10 +14,15 @@ body {
   font-size: 32px;
 }
 
+
+
 .case1{
   background-color: lightyellow;
   padding: 0.5rem 2rem 0.5rem 2rem;
   margin: 0.5rem;
+  display: flex;
+  align-items: center; /* Vertically align text */
+  gap: 5rem; /* Optional spacing between h1 and p */
 }
 
 .case2{
@@ -46,7 +51,7 @@ body {
 
 .case2 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0.8fr 1.2fr 0.8fr 1.2fr;
   gap: 1rem;
 }
 
@@ -88,7 +93,7 @@ body {
 
 .case4 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.8fr 1.2fr 0.8fr 1.2fr;
   gap: 1rem;
 }
 
@@ -96,6 +101,37 @@ body {
   border-radius: 8px;
   background-color: lightyellow;
 }
+
+
+.row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start; /* Align boxes to top */
+  flex-wrap: wrap; /* Optional: allow wrapping on smaller screens */
+}
+
+.box1{
+  padding: 10px;
+  width: 15%; /* Adjust as needed */
+  box-sizing: border-box;
+}
+.box2 {
+ 
+  padding: 10px;
+  width: 45%; /* Adjust as needed */
+  box-sizing: border-box;
+}
+.box3{
+
+  padding: 10px;
+  width: 30%; /* Adjust as needed */
+  box-sizing: border-box;
+
+}
+.subbtn {
+  margin-top: 10px;
+}
+
 
 @media (max-width: 1024px) {
   .case4 {
