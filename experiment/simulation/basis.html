@@ -31,6 +31,17 @@
         border: 1px solid teal;
         margin: 0.5rem 0.2rem 0.2rem 0.2rem;
     }
+
+    input {
+  font-size: 16px; /* Size of user-typed text */
+  width: 2.5rem;
+  border: none;
+  background-color: rgb(231, 226, 226);
+} 
+#aDisplay, #aDisplay2, #aDisplay3{
+    background-color: yellow;
+}
+
 </style>
 <body>
    
@@ -39,10 +50,11 @@
     <p style="margin-left: 1rem;">NOTE: Consider the vector space R<sup>2</sup> over R</p>
     <div class="example">
         <div class="excol">
-            <h3>I. Example</h3><button class="subbtn" id="calcbtn"  onclick="exmp1()">i. B = {(1, 0), (0, 1)} &#8838; R<sup>2</sup></button>
+            <h3>I. Example <br>i. B = {(1, 0), (0, 1)} &#8838; R<sup>2</sup><br><button class="subbtn" id="calcbtn"  onclick="exmp1()">Click here</button></h3>
             
                 <ul id="exmpRes1" style="display: none;">
-                    <li>B is basis, dim R<sup>2</sup> = 2</li>
+                    <li>B is basis</li>
+                    <li>Dim R<sup>2</sup> = 2</li>
                     <li>Coordinates of (a, b) are a and b w.r.t. the basis B</li>
                     <li>In particular, coordinates of (1, 2) are 1 and 2 w.r.t. the basis B.</li>
                 </ul>
@@ -50,16 +62,19 @@
                 
         <div class="excol">
             <img id="eximg1" src="images/bex1.1.PNG" alt="basis example" height="250vh" width="auto">
-        </div><br>
+        </div>
         <div class="excol">
-            <button class="subbtn" id="calcbtn"  onclick="exmp2()">ii. B = {(1, 1), (1, 2)} &#8838; R<sup>2</sup></button>
+          <br><h3>ii. B = {(1, 1), (1, 2)} &#8838; R<sup>2</sup> <br> <button class="subbtn" id="calcbtn"  onclick="exmp2()">Click here </button></h3>
+           
                 <ul id="exmpRes2" style="display: none;">
-                <li>B is basis, dim R<sup>2</sup> = 2</li>
+                <li>B is basis</li>
+                <li>Dim R<sup>2</sup> = 2</li>
                 <li>Coordinates of (a, b) are 2a-b and b-a w.r.t. the basis B</li>
                 <li>In particular, coordinates of (1, 2) are 0 and 1 w.r.t. the basis B.</li>
             </ul>
     
         </div>
+        
         <div class="excol">
             <img id="eximg2" src="images/bex1.1.PNG" alt="basis example" height="250vh" width="auto">
         </div>
@@ -67,21 +82,76 @@
     <div class="cons">
         <h3>II. Construction of basis of R<sup>2</sup></h3>
         <div class="construction">
-            <div class="conscol">
+        
+                <div class="conscol">
+                    <p><ul><li>
+                        Enter (
+                    <select id="xVal" onchange="updateADisplay()">
+                        <option value="">x</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="-1">-1</option>
+                        <option value="-2">-2</option>
+                        <option value="-3">-3</option>
+                    </select>
+                    ,
+                    <select id="yVal" onchange="updateADisplay()">
+                        <option value="">y</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="-1">-1</option>
+                        <option value="-2">-2</option>
+                        <option value="-3">-3</option>
+                    </select>)
+                    to choose 
+                    a = <span id="aDisplay">( x, y )</span> &isin; R<sup>2</sup> such that a &ne; 0
+                    </li></ul> </p>
                 
-                <p><ul><li>Choose  a &ne; 0 <br><span style="color: blueviolet;">[ For example let a = (2, 3) ]</span></li> <li><button onclick="document.getElementById('bcons1').src='images/bcons1.png'" style="margin-top: 5px;">Geometry</button></li></ul></p>
-                <img src="images/bex1.1.PNG" alt="basis" id="bcons1">
-            </div>
-            <div class="conscol">
-                <p><ul><li>Choose  b &notin; span({a}) <br> <span style="color: blueviolet;">[ For example let b = (1, 4) ]</span></li><li><button style="margin-top: 5px;" onclick="document.getElementById('bcons2').src='images/bcons2.PNG';"">Geometry</button></li></ul></p>
-                <img src="images/bex1.1.PNG" alt="basis" id="bcons2">
-            </div>
+                    <button onclick="drawFirstGraph()">Geometry</button><br><br>
+                    <canvas id="canvasA" width="300" height="300"></canvas>
+    
+                </div>
+
+
+                <div class="conscol">
+                    <p><ul><li>
+                        Enter (
+                    <select id="x1Val" onchange="updateADisplay()">
+                        <option value="">x₁</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="-1">-1</option>
+                        <option value="-2">-2</option>
+                        <option value="-3">-3</option>
+                    </select>
+                    ,
+                    <select id="y1Val" onchange="updateADisplay()">
+                        <option value="">y₁</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="-1">-1</option>
+                        <option value="-2">-2</option>
+                        <option value="-3">-3</option>
+                    </select>)
+                    to choose 
+                    b = <span id="aDisplay2">( x, y )</span> &isin; R<sup>2</sup><br> such that b &notin; span({a})
+                    </li></ul> </p>
+                
+                    <button onclick="drawSecondGraph()">Geometry</button><br><br>
+                    <canvas id="canvasB" width="300" height="300"></canvas>
+                    
+                </div>
+  
             
             <div class="conscol">
-                <h3>Example</h3>
-                <ul><li>B = {a, b} is a basis. </li>
-                    <li>For example {(2, 3), (1, 4)} is a basis. </li>
-                    <li>For example {(2, 3), (4, 6)} is not a basis.</li>
+                <h3>Basis</h3>
+                <ul>
+                    <li><span id="aDisplay3">B = {a, b} = {(x, y), (x<sub>1</sub>, y<sub>1</sub>)} is a basis.</span></li>
+                    <!-- <li id="nbasis">For example {(2, 3), (4, 6)} is not a basis.</li> -->
                 
             </ul>
                 <br>
@@ -94,7 +164,7 @@
         <h3>III. Checking whether a given nonempty subset B of R<sup>2</sup> is a basis or not?</h3>
         <div class="checkcondition">
             <div class="ckcol">
-                <button class="subbtn" onclick="step1()">Step 1</button>
+              <p><b>Step 1 </b><button class="subbtn" onclick="step1()">Click here</button></p> 
                 <div id="stp1" style="display: none;" >
                     <p class="checkblock"><ul><li>If 0 &isin; B, <strong>B is not a basis.</strong></li>
                         <li>Otherwise go to Step 2.</li></ul></p>
@@ -102,7 +172,7 @@
                 
             </div>
             <div class="ckcol">
-                <button class="subbtn" onclick="step2()">Step 2</button>
+                <p><b>Step 2 </b><button class="subbtn" onclick="step2()">Click here</button></p>
                 <div id="stp2" style="display: none;" >
                 <ul>
                     <li>If no. of elements in B is not 2, then B is not a basis.</li>
@@ -111,26 +181,116 @@
             </div>
             </div>
             <div class="ckcol">
-                <button class="subbtn" onclick="step3()">Step 3</button>
+                <p><b>Step 3</b> <button class="subbtn" onclick="step3()">Clik here</button></p>
                 <div id="stp3" style="visibility:hidden;" >
-                <p><ul><p>If B = {a, b}&subset;R<sup>2</sup>, then it may or may not be a basis. <br> Infact</p>
+
+
+                    <p>
+                        B = {(
+                        <select id="uVal">
+                          <option value="">u</option>
+                          <option value="-2">-2</option><option value="-1">-1</option>
+                          <option value="0">0</option><option value="1">1</option>
+                          <option value="2">2</option>
+                        </select>,
+                        <select id="vVal">
+                          <option value="">v</option>
+                          <option value="-2">-2</option><option value="-1">-1</option>
+                          <option value="0">0</option><option value="1">1</option>
+                          <option value="2">2</option>
+                        </select> ), (
+                        <select id="wVal">
+                          <option value="">w</option>
+                          <option value="-2">-2</option><option value="-1">-1</option>
+                          <option value="0">0</option><option value="1">1</option>
+                          <option value="2">2</option>
+                        </select>,
+                        <select id="xVal1">
+                          <option value="">x</option>
+                          <option value="-2">-2</option><option value="-1">-1</option>
+                          <option value="0">0</option><option value="1">1</option>
+                          <option value="2">2</option>
+                        </select> )}
+                      </p>
+                      
+                      <button onclick="checkBasisab()">Submit</button>
+                      
+                      <div id="result4"></div>
+                <!-- <p><ul><p>If B = {a, b}&subset;R<sup>2</sup>, then it may or may not be a basis. <br> Infact</p>
                     <li>b &isin; Span({a}) &#8658; <strong>B is not basis</strong></li>
                 <li>b &notin; Span({a}) &#8658; <strong>B is basis</strong></li>
                 </ul>
-                </p>
+                </p> -->
                 </div>
             </div>
         </div>
 
     </div>
-    <p class="note" style="background-color: lightyellow;">NOTE: Apply the method on various subsets of R<sup>2</sup></p>
+
+    <!-- <p class="note" style="background-color: lightyellow;">NOTE: Apply the method on various subsets of R<sup>2</sup></p> -->
     <p class="note" style="color:darkblue; font-size: 1.5rem; border:1px solid darkblue;">NOTE: Try it yourself for the vector space R<sup>n</sup> over R for some other values of n</p>
     <p style="float: center; align-content:right;">
             <a href="./" class="previous">&laquo; Previous</a>
         </p>
+
+
+
+
+
+
+
+        <script>
+            function checkBasisab() {
+              const u = parseInt(document.getElementById('uVal').value);
+              const v = parseInt(document.getElementById('vVal').value);
+              const w = parseInt(document.getElementById('wVal').value);
+              const x = parseInt(document.getElementById('xVal1').value);
+            
+              const resultDiv = document.getElementById('result4');
+              resultDiv.innerHTML = '';
+            
+              // Validation
+              if (isNaN(u) || isNaN(v) || isNaN(w) || isNaN(x)) {
+                resultDiv.innerHTML = "Please select all values.";
+                return;
+              }
+            
+              if (u === 0 && v === 0) {
+                resultDiv.innerHTML = "Vector a = (u,v) cannot be the zero vector.";
+                return;
+              }
+            
+              if (u === w && v === x) {
+                resultDiv.innerHTML = "a and b cannot be equal.";
+                return;
+              }
+            
+              // Linear independence check using determinant
+              const det = u * x - v * w;
+            
+              if (det !== 0) {
+                resultDiv.innerHTML = `B is a basis.<br><b>Reason:</b> b ∉ span({a})`;
+              } else {
+                resultDiv.innerHTML = `B is not a basis.<br><b>Reason:</b> b ∈ span({a})`;
+              }
+            }
+            </script>
+        
+
+
+
+
+
 </body>
 <script src="js/basis.js"></script>
+
+
+
 <script>
+
+
+
+
     function step1(){
         document.getElementById('stp1').style.display= "";
     }
@@ -140,5 +300,273 @@
     function step3(){
         document.getElementById('stp3').style.visibility= "";
     }
+
+
 </script>
+
+
+
+<script>
+    let canvasA = document.getElementById("canvasA");
+    let canvasB = document.getElementById("canvasB");
+    let ctxA = canvasA.getContext("2d");
+    let ctxB = canvasB.getContext("2d");
+  
+    let aVec = null;
+    const maxInput = 9;
+  
+    function updateADisplay() {
+      const x = document.getElementById("xVal").value;
+      const y = document.getElementById("yVal").value;
+      const x1 = document.getElementById("x1Val").value;
+      const y1 = document.getElementById("y1Val").value;
+      document.getElementById("aDisplay").innerText = x && y ? `( ${x}, ${y} )` : "( x, y )";
+      document.getElementById("aDisplay2").innerText = x1 && y1 ? `( ${x1}, ${y1} )` : "( x, y )";
+      document.getElementById("aDisplay3").innerText = (x && y && x1 && y1) 
+        ? `B = {(a, b)} = {( ${x}, ${y} ), ( ${x1}, ${y1} )} is a basis.` 
+        : "B = {(a, b)} = {(x, y), (x1, y1)} is a basis.";
+}
+    
+  
+    function drawGrid(ctx, centerX, centerY, scale) {
+      ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+      ctx.strokeStyle = "#ddd";
+      ctx.font = "12px Arial";
+      ctx.fillStyle = "black";
+  
+      for (let i = -maxInput; i <= maxInput; i++) {
+        let xPos = centerX + i * scale;
+        let yPos = centerY - i * scale;
+  
+        ctx.beginPath();
+        ctx.moveTo(xPos, 0);
+        ctx.lineTo(xPos, ctx.canvas.height);
+        ctx.stroke();
+  
+        ctx.beginPath();
+        ctx.moveTo(0, yPos);
+        ctx.lineTo(ctx.canvas.width, yPos);
+        ctx.stroke();
+  
+        if (i !== 0) {
+          ctx.fillText(i, xPos - 5, centerY + 15);
+          ctx.fillText(i, centerX - 15, yPos + 5);
+        }
+      }
+  
+      ctx.beginPath();
+      ctx.moveTo(centerX, 0);
+      ctx.lineTo(centerX, ctx.canvas.height);
+      ctx.moveTo(0, centerY);
+      ctx.lineTo(ctx.canvas.width, centerY);
+      ctx.strokeStyle = "black";
+      ctx.lineWidth = 2;
+      ctx.stroke();
+    }
+  
+    function drawVector(ctx, x, y, centerX, centerY, scale, color) {
+      let t = 10;
+      let startX = centerX - x * scale * t;
+      let startY = centerY + y * scale * t;
+      let endX = centerX + x * scale * t;
+      let endY = centerY - y * scale * t;
+  
+      ctx.beginPath();
+      ctx.moveTo(startX, startY);
+      ctx.lineTo(endX, endY);
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 2;
+      ctx.stroke();
+    }
+  
+    function drawPoint(ctx, x, y, centerX, centerY, scale, color) {
+      let px = centerX + x * scale;
+      let py = centerY - y * scale;
+  
+      ctx.beginPath();
+      ctx.arc(px, py, 5, 0, 2 * Math.PI);
+      ctx.fillStyle = color;
+      ctx.fill();
+      ctx.fillStyle = "black";
+      ctx.font = "14px Arial";
+      ctx.fillText(`(${x},${y})`, px + 5, py - 5);
+    }
+  
+    function drawFirstGraph() {
+      const x = Number(document.getElementById("xVal").value);
+      const y = Number(document.getElementById("yVal").value);
+  
+      if (x === 0 && y === 0 || isNaN(x) || isNaN(y)) {
+      alert("Select non-zero vector a.");
+                return;
+      }
+  
+      aVec = [x, y];
+      let scale = (canvasA.width / 1.6) / maxInput;
+      let centerX = canvasA.width * 0.3;
+      let centerY = canvasA.height * 0.7;
+  
+      drawGrid(ctxA, centerX, centerY, scale);
+      drawVector(ctxA, x, y, centerX, centerY, scale, "red");
+      drawPoint(ctxA, x, y, centerX, centerY, scale, "red");
+     
+      
+    }
+  
+    function drawSecondGraph() {
+      if (!aVec) {
+        alert("Please select and plot vector a first.");
+        return;
+      }
+  
+      const x1 = Number(document.getElementById("x1Val").value);
+      const y1 = Number(document.getElementById("y1Val").value);
+      const [ax, ay] = aVec;
+  
+      if (isNaN(x1) || isNaN(y1)) {
+        alert("Select a valid vector b.");
+        return;
+      }
+  
+      // Check if b is in span of a
+      const scalar = ax !== 0 ? x1 / ax : (ay !== 0 ? y1 / ay : 0);
+      const inSpan = ax * scalar === x1 && ay * scalar === y1;
+  
+      if (inSpan) {
+        alert( "b ∈ span({a}). Choose a b that's linearly independent from a.");
+        return;
+      }
+  
+      let scale = (canvasB.width / 1.6) / maxInput;
+      let centerX = canvasB.width * 0.3;
+      let centerY = canvasB.height * 0.7;
+      drawGrid(ctxB, centerX, centerY, scale);
+
+drawVector(ctxB, ax, ay, centerX, centerY, scale, "red"); // Draw line through a
+drawPoint(ctxB, ax, ay, centerX, centerY, scale, "red");  // Point a
+drawPoint(ctxB, x1, y1, centerX, centerY, scale, "blue"); // Only point b
+
+    }
+
+    
+
+    
+  
+    window.onload = () => {
+      let scale = (canvasA.width / 1.6) / maxInput;
+      let centerX = canvasA.width * 0.3;
+      let centerY = canvasA.height * 0.7;
+      drawGrid(ctxA, centerX, centerY, scale);
+      drawGrid(ctxB, centerX, centerY, scale);
+    };
+  </script>
+
+
+
+
+<!-- <script>
+    let canvas2 = document.getElementById("vectorCanvas2");
+    let ctx2 = canvas2.getContext("2d");
+    const maxInput2 = 9;
+
+    function validateInput2(input) {
+        let values = input.split(",");
+        if (values.length !== 2) return false;
+        
+        for (let val of values) {
+            let num = Number(val.trim());
+            if (isNaN(num) || num < -maxInput2 || num > maxInput2) return false;
+        }
+        return true;
+    }
+
+    function drawGrid2(centerX, centerY, scale) {
+        ctx2.clearRect(0, 0, canvas2.width, canvas2.height);
+        ctx2.strokeStyle = "#ddd";
+        ctx2.font = "12px Arial";
+        ctx2.fillStyle = "black";
+
+        for (let i = -maxInput2; i <= maxInput2; i++) {
+            let xPos = centerX + i * scale;
+            let yPos = centerY - i * scale;
+
+            ctx2.beginPath();
+            ctx2.moveTo(xPos, 0);
+            ctx2.lineTo(xPos, canvas2.height);
+            ctx2.stroke();
+
+            ctx2.beginPath();
+            ctx2.moveTo(0, yPos);
+            ctx2.lineTo(canvas2.width, yPos);
+            ctx2.stroke();
+
+            if (i !== 0) {
+                ctx2.fillText(i, xPos - 5, centerY + 15);
+                ctx2.fillText(i, centerX - 15, yPos + 5);
+            }
+        }
+
+        ctx2.beginPath();
+        ctx2.moveTo(centerX, 0);
+        ctx2.lineTo(centerX, canvas2.height);
+        ctx2.moveTo(0, centerY);
+        ctx2.lineTo(canvas2.width, centerY);
+        ctx2.strokeStyle = "black";
+        ctx2.lineWidth = 2;
+        ctx2.stroke();
+    }
+
+    function drawVectors2(x1, y1, x2, y2) {
+        ctx2.clearRect(0, 0, canvas2.width, canvas2.height);
+        let scale = (canvas2.width / 1.6) / maxInput2;
+        let centerX = canvas2.width * 0.3;
+        let centerY = canvas2.height * 0.7;
+
+        drawGrid2(centerX, centerY, scale);
+
+        function drawInfiniteLine(x, y, color) {
+            if (x === 0 && y === 0) return;
+            let t = 10;
+            let startX = centerX - x * scale * t;
+            let startY = centerY + y * scale * t;
+            let endX = centerX + x * scale * t;
+            let endY = centerY - y * scale * t;
+
+            ctx2.beginPath();
+            ctx2.moveTo(startX, startY);
+            ctx2.lineTo(endX, endY);
+            ctx2.strokeStyle = color;
+            ctx2.lineWidth = 2;
+            ctx2.stroke();
+        }
+
+        function drawPoint(x, y, color) {
+            let screenX = centerX + x * scale;
+            let screenY = centerY - y * scale;
+
+            ctx2.beginPath();
+            ctx2.arc(screenX, screenY, 5, 0, 2 * Math.PI);
+            ctx2.fillStyle = color;
+            ctx2.fill();
+
+            ctx2.font = "14px Arial";
+            ctx2.fillStyle = "black";
+            ctx2.fillText(`(${x},${y})`, screenX + 5, screenY - 5);
+        }
+
+        drawInfiniteLine(x1, y1, "green");
+        drawInfiniteLine(x2, y2, "orange");
+
+        drawPoint(x1, y1, "green");
+        drawPoint(x2, y2, "orange");
+    }
+
+    window.onload = function () {
+        let centerX2 = canvas2.width * 0.3;
+        let centerY2 = canvas2.height * 0.7;
+        let scale2 = (canvas2.width / 1.6) / maxInput2;
+        drawGrid2(centerX2, centerY2, scale2);
+    };
+</script> -->
+
 </html>
