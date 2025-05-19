@@ -8,3 +8,4 @@
 | :---: | :---: | :---: | :---: |
 | 1 | Yashi Agrawal | yashi03902@gmail.com | Dayalbagh Educational Institute |
 | 2 | Shinu Pachauri | shinupachouri520@gmail.com | Dayalbagh Educational Institute |
+| 3 | A Gurucharan| gurucharan1027@gmail.com | Dayalbagh Educational Institute |
