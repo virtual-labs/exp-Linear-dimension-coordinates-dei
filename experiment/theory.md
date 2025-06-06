@@ -3,13 +3,13 @@ Let V be a vector space over R or C and S be a subset of V.
 #### 1.1. Linearly dependent set:
 Let &straightphi; ≠S⊆V. If x&isin;S be such that x is a linear combination of some other elements of S, then S is said to be linearly dependent. In other words, if S is linearly dependent, then for some x&isin;S, there exists y<sub>1</sub>, y<sub>2</sub>, …,y<sub>n</sub>&isin;S, which are different from x such that x=α<sub>1</sub>y<sub>1</sub>+α<sub>2</sub>y<sub>2</sub>+ …+α<sub>n</sub>y<sub>n</sub>, for some α<sub>1</sub>, α<sub>2</sub>, ..., α<sub>n</sub>&isin;F. Notice that in this case, (-1)x+α<sub>1</sub>y<sub>1</sub>+α<sub>2</sub>y<sub>2</sub>+ …+ α<sub>n</sub>y<sub>n</sub>=0, i.e. there exists a linear combination of elements of S which equals zero, but not all coefficients are zero. Any set containing zero vector is linearly dependent.
 
-![Linearly dependent set](images/exp4image1.PNG "Linearly dependent set")<br>
+![Linearly dependent set](images/exp4newimage1.PNG "Linearly dependent set")<br>
 #### 1.2. Linearly independent set:
 Let &straightphi;≠S⊆V. Then S is said to be a linearly independent set if it is not linearly dependent. The non-empty set &straightphi; is defined to be linearly independent.<br>
 To show that S={a, b}⊆V is linearly independent, one needs to show that b≠αa and a≠βb, for any scalars α and β.
 Similarly, to show that S={a, b, c}⊆V is linearly independent one needs to show that none of a, b and c is a linear combination of the other two elements.<br>
 
-![Linearly independent set](images/exp4image2.PNG "Linearly independent set")<br>
+![Linearly independent set](images/exp4newimage2.PNG "Linearly independent set")<br>
 General method to show linear independence is provided in the proposition given below.
 #### 1.3. Proposition:
 Let &straightphi;≠S⊆V. Then S is linearly independent iff [α<sub>1</sub>x<sub>1</sub>+ α<sub>2</sub>x<sub>2</sub>+ …+α<sub>n</sub>x<sub>n</sub>=0 &#8658; α<sub>i</sub>=0, for all i=1, 2, …, n, where α<sub>1</sub>, α<sub>2</sub>, ..., α<sub>n</sub>&isin;F, x<sub>1</sub>, x<sub>2</sub>, …, x<sub>n</sub>&isin;S].
