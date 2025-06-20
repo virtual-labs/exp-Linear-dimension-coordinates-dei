@@ -8,7 +8,7 @@
 
 ### About the Experiment 
 
-Fill a brief description of this experiment here
+This experiment deals with the understanding of concepts like linear independence, basis, dimension and co-ordinates and their visualization with the help of interactive simulation and examples.
 
 <b>Name of Developer | <b> Prof. Gunjan Agrawal
 :--|:--|
