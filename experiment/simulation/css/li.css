@@ -51,9 +51,10 @@ body {
 
 .case2 {
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr 0.8fr 1.2fr;
+  grid-template-columns: 1fr 1.8fr 1fr; /* 3 columns now */
   gap: 1rem;
 }
+
 
 .c2column {
   /*padding: 1rem;*/
@@ -72,7 +73,7 @@ body {
 }
 .case3 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1.2fr 1.8fr 1fr;
   gap: 1rem;
 }
 
@@ -93,7 +94,7 @@ body {
 
 .case4 {
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr 0.8fr 1.2fr;
+  grid-template-columns: 1.2fr 0.8fr 1.2fr 0.8fr;
   gap: 1rem;
 }
 
@@ -102,6 +103,9 @@ body {
   background-color: lightyellow;
 }
 
+#c4li, #c4ld{
+  padding-top: 2.2rem;
+}
 
 .row {
   display: flex;
