@@ -52,7 +52,7 @@ input::placeholder {
         font-size: 1.3rem;
     }
 
-    #btn1, #btn2{
+    #btn1, #btn2, #btn3, #btn4, #btn5, #btn6, #btn7, #btn8, #btn9, #btn10, #btn11, #btn12{
         width: 15rem;
     }
 
@@ -63,11 +63,44 @@ input::placeholder {
  
 
     <h2 class="pagehead">Linear independence of a subset S of the vector space R<sup>2</sup> over R</h2>
-    <div class="case1" id="case1">
+    <!-- <div class="case1" id="case1">
      
         <h3>CASE 1 : S = &#981; &emsp;&emsp;&emsp; <button class="subbtn" id="calcbtn" onclick="caseOne()">Click here for result</button></h3>
         <p id="result"></p>
 
+    </div> -->
+    <div class="case5">
+            <div class="row">
+              <!-- Box 1 -->
+              <div class="box1">
+                <h3>CASE 1 : S = &#981; </h3>
+                <!-- &emsp;&emsp;&emsp;<button class="subbtn" id="calcbtn" onclick="case4()" style="visibility: visible;">Click here for result</button> -->
+              </div>
+          
+              <!-- Box 2 -->
+              <div class="box2">
+                <p id="c4ques" style="display:block;">
+                    What do you infer? <br><br>
+                    <input id="btn1" type="submit" onclick="c1ld('btn1'); this.style.backgroundColor = 'green'; this.style.color = '#FFF'; btn2.style.backgroundColor = 'lightgrey';" value="S is Linearly Dependent">
+                    /
+                    <input id="btn2" type="submit" onclick="c1li('btn2'); this.style.backgroundColor = 'red'; btn1.style.backgroundColor = 'lightgrey'; this.style.color = '#FFF';" value="S is Linearly Independent">
+                  </p>
+                
+              </div>
+              
+          
+              <!-- Box 3 -->
+              
+              <div class="box3">
+                <p id="c1res">
+                    <p id="c1li"></p>
+                    <p id="c1ld"></p>
+                 </p>
+              </div>
+             
+            </div>
+          
+          
     </div>
     <div class="case5">
             <div class="row">
@@ -81,9 +114,9 @@ input::placeholder {
               <div class="box2">
                 <p id="c4ques" style="display:block;">
                     What do you infer? <br><br>
-                    <input id="btn1" type="submit" onclick="c5ld('btn1'); this.style.backgroundColor = 'green'; this.style.color = '#FFF'; btn2.style.backgroundColor = 'lightgrey';" value="S is Linearly Dependent">
+                    <input id="btn3" type="submit" onclick="c5ld('btn3'); this.style.backgroundColor = 'green'; this.style.color = '#FFF'; btn4.style.backgroundColor = 'lightgrey';" value="S is Linearly Dependent">
                     /
-                    <input id="btn2" type="submit" onclick="c5li('btn2'); this.style.backgroundColor = 'red'; btn1.style.backgroundColor = 'lightgrey'; this.style.color = '#FFF';" value="S is Linearly Independent">
+                    <input id="btn4" type="submit" onclick="c5li('btn4'); this.style.backgroundColor = 'red'; btn3.style.backgroundColor = 'lightgrey'; this.style.color = '#FFF';" value="S is Linearly Independent">
                   </p>
                 
               </div>
@@ -105,48 +138,101 @@ input::placeholder {
     <div class="case2">
         <div class="c2column">
             <h3>CASE 3 : (i) S = {a}, a &ne; 0 </h3>
-            <button class="subbtn" id="calcbtn"  onclick="case2()"> Click here for result</button><br>
-            <p id="result1"></p>
-            <h4 id="reason"></h4>
-            <p id="result11" style="visibility: hidden;">&alpha; . a = 0
-            &#8658; &alpha; = 0, &alpha; &isin; F</p>
+             <img id="c2li" src="images/c2li2.png" alt="linearly independent">
+            <!-- <button class="subbtn" id="calcbtn"  onclick="case2()"> Click here for result</button><br> -->
+            
+            <!-- <p id="result1"></p> -->
+             
                 
         
 
         </div>
         <div class="c2column">
-            
-            <img id="c2li" src="images/c2li2.png" alt="linearly independent">
+             <p id="c4ques" style="display:block;">
+                    What do you infer? <br><br>
+                    <input id="btn5" type="submit" onclick="c3ld('btn5'); this.style.backgroundColor = 'red'; this.style.color = '#FFF'; btn6.style.backgroundColor = 'lightgrey';" value="S is Linearly Dependent">
+                    /
+                    <input id="btn6" type="submit" onclick="c3li('btn6'); this.style.backgroundColor = 'green'; btn5.style.backgroundColor = 'lightgrey'; this.style.color = '#FFF';" value="S is Linearly Independent">
+                  </p>
+           
         </div>
+         <div class="c2column">
+            <p id="c3li"></p>
+                    <p id="c3ld"></p>
+            <h4 id="reason"></h4>
+            <p id="result11" style="visibility: hidden;">&alpha; . a = 0
+            &#8658; &alpha; = 0, &alpha; &isin; F</p>
+           
+        </div>
+
         <div class="c2column">
             <h3>(ii) S = {a}, a = 0</h3>
-            <button class="subbtn" id="calcbtn"  onclick="case2_1()"> Click here for result</button><br>
-            <p id="result2"></p>
-            <h4 id="reson2"></h4>
-            <p id="result21" style="visibility: hidden;">&alpha; . 0 = 0, &alpha; &ne; 0, &alpha; &isin; F</p> 
+             <img id="c2ld" src="images/c2ld2.png" alt="linearly dependent">
+            <!-- <button class="subbtn" id="calcbtn"  onclick="case2_1()"> Click here for result</button><br> -->
+             
+            <!-- <p id="result2"></p> -->
+           
         </div>
         <div class="c2column">
-            
-            <img id="c2ld" src="images/c2ld2.png" alt="linearly dependent">
+            <p id="c4ques" style="display:block;">
+                    What do you infer? <br><br>
+                    <input id="btn7" type="submit" onclick="c3ii_ld('btn7'); this.style.backgroundColor = 'green'; this.style.color = '#FFF'; btn8.style.backgroundColor = 'lightgrey';" value="S is Linearly Dependent">
+                    /
+                    <input id="btn8" type="submit" onclick="c3ii_li('btn8'); this.style.backgroundColor = 'red'; btn7.style.backgroundColor = 'lightgrey'; this.style.color = '#FFF';" value="S is Linearly Independent">
+                  </p>
+           
+        </div>
+        <div class="c2column">
+              <p id="c3ii_li"></p>
+                    <p id="c3ii_ld"></p>
+            <h4 id="reson2"></h4>
+            <p id="result21" style="visibility: hidden;">&alpha; . 0 = 0, &alpha; &ne; 0, &alpha; &isin; F</p> 
+           
         </div>
     </div>
     <div class="case3">
         <div class="c3column">
-            <h3>CASE 4 : S &ne; {.} , &#981; and 0 &notin; S &emsp;&emsp;<button class="subbtn" id="calcbtn"  onclick="case3()">Click here for result </button></h3>
-            To understand this case, let S = {a, b} & S<sub>1</sub> = {a}<br>
-            <p id="c3res1" style="visibility: hidden;">
+            <h3>CASE 4 : S &ne; {.} , &#981; and 0 &notin; S &emsp;&emsp;</h3>
+            <!-- <button class="subbtn" id="calcbtn"  onclick="case3()">Click here for result </button> -->
+            <p>To understand this case, let S = {a, b} & S<sub>1</sub> = {a}</p>
+            <p><b>i) b &isin; L(S<sub>1</sub>)</b></p>
+            <img id="c4ldimg" src="images/cs3ld2.png" alt="linearly dependent">
+            <!-- <p id="c3res1" style="visibility: hidden;">
                 <b>Result :</b><br><br>
                 b &isin; L(S<sub>1</sub>)
                 &#8658;  S is LINEARLY DEPENDENT<br>
                 b &notin; L(S<sub>1</sub>)
                 &#8658; S is LINEARLY INDEPENDENT
-            </p>
+            </p> -->
+        </div>
+        <div class="c3column" style="padding-top: 5.4rem;">
+            <p id="c4ques" style="display:block;">
+                    What do you infer? <br><br>
+                    <input id="btn9" type="submit" onclick="case4i_ld('btn9'); this.style.backgroundColor = 'green'; this.style.color = '#FFF'; btn10.style.backgroundColor = 'lightgrey';" value="S is Linearly Dependent">
+                    /
+                    <input id="btn10" type="submit" onclick="case4i_li('btn10'); this.style.backgroundColor = 'red'; btn9.style.backgroundColor = 'lightgrey'; this.style.color = '#FFF';" value="S is Linearly Independent">
+                  </p>
+        </div>
+        <div class="c3column" style="padding-top: 5.4rem;">
+            <p id="case4i_li"></p>
+                    <p id="case4i_ld"></p>
+            
         </div>
         <div class="c3column">
-            <img id="c3ld" src="images/cs3ld2.png" alt="linearly dependent">
+            <p><b>ii) b &notin; L(S<sub>1</sub>)</b></p>
+            <img id="c4liimg" src="images/cs3li2.png" alt="linearly independent">
         </div>
         <div class="c3column">
-            <img id="c3li" src="images/cs3li2.png" alt="linearly independent">
+             <p id="c4ques" style="display:block;">
+                    What do you infer? <br><br>
+                    <input id="btn11" type="submit" onclick="case4ii_ld('btn11'); this.style.backgroundColor = 'red'; this.style.color = '#FFF'; btn12.style.backgroundColor = 'lightgrey';" value="S is Linearly Dependent">
+                    /
+                    <input id="btn12" type="submit" onclick="case4ii_li('btn12'); this.style.backgroundColor = 'green'; btn11.style.backgroundColor = 'lightgrey'; this.style.color = '#FFF';" value="S is Linearly Independent">
+                  </p>
+        </div>
+        <div class="c3column">
+            <p id="case4ii_li"></p>
+                    <p id="case4ii_ld"></p>
         </div>
         
     </div>
@@ -154,9 +240,10 @@ input::placeholder {
     <div class="case4">
         <div class="c4column">
             <h3>Example 1a: S = {(1, 1), (1, 2)}</h3>
-            <button class="subbtn" id="calcbtn"  onclick="exmp1()"> Click here for result</button><br>
+            <p id="exmpres" style="visibility: ;">S is LINEARLY INDEPENDENT</p>
+            <button class="subbtn" id="calcbtn"  onclick="exmp1()"> Click here for reason</button><br>
             
-            <p id="exmpres" style="visibility: hidden;">S is LINEARLY INDEPENDENT</p>
+            
             <h4 id="resexmp1"></h4>
             <p id="exmpres1.1" style="visibility: hidden;">b &equiv; (1, 2) &notin; L({(1, 1)})</p>
             <h4 id="resexmp1.1"></h4>
@@ -173,8 +260,9 @@ input::placeholder {
             </div>
             <div class="c4column">
             <h3>Example 1b: S = {(1, 1), (3, 3)}</h3>
-            <button class="subbtn" id="calcbtn"  onclick="exmp2()">Click here for result</button><br>
-            <p id="exmpres2" style="visibility: hidden;">S is LINEARLY DEPENDENT</p>
+            <p id="exmpres2" style="visibility: ;">S is LINEARLY DEPENDENT</p>
+            <button class="subbtn" id="calcbtn"  onclick="exmp2()">Click here for reason</button><br>
+            
                 <h4 id="abh4"></h4>
                 <p id="exmpres2.1" style="visibility: hidden;">b &equiv; (3, 3) &isin; L({(1, 1)}) &#8658;</p>
                  <h4 id="abch4"></h4>
@@ -389,9 +477,7 @@ input::placeholder {
     function case2(){
         
         document.getElementById('result1').innerHTML="S is LINEARLY INDEPENDENT";
-        document.getElementById('reason').innerHTML="Reason :";
-        document.getElementById('result11').style.visibility= "visible"
-        document.getElementById('c2li').src='images/c2li.png';
+        
         
     }
     function case2_1(){
@@ -402,8 +488,7 @@ input::placeholder {
     }
     function case3(){
         document.getElementById('c3res1').style.visibility= "visible";
-        document.getElementById('c3ld').src='images/cs3ld.png';
-        document.getElementById('c3li').src='images/cs3li.png';
+       
     }
     function case4(){
         document.getElementById('c4res').style.visibility= "visible";
@@ -428,13 +513,70 @@ input::placeholder {
         document.getElementById('res3exp').style.visibility= "visible";
         document.getElementById('c4ld').src='images/c4ld.png';
     }
-   function c5ld(){
+    function c5ld(){
        document.getElementById('c5ld').innerHTML='CORRECT!<br> Reason:If S={0, x, y}, then 1.0 + 0.x + 0.y = 0';
        document.getElementById('c5li').innerHTML='';
    }
    function c5li(){
        document.getElementById('c5li').innerHTML='INCORRECT!<br> Reason:If S={0, x, y}, then 1.0 + 0.x + 0.y = 0';
        document.getElementById('c5ld').innerHTML='';
+   }
+   function c1ld(){
+       document.getElementById('c1ld').innerHTML='CORRECT!<br> Reason:S is LINEARLY INDEPENDENT, by definition.';
+       document.getElementById('c1li').innerHTML='';
+   }
+   function c1li(){
+       document.getElementById('c1li').innerHTML='INCORRECT!<br> Reason:S is LINEARLY INDEPENDENT, by definition.';
+       document.getElementById('c1ld').innerHTML='';
+   }
+   function c3ld(){
+       document.getElementById('c3ld').innerHTML='INCORRECT!';
+       document.getElementById('c3li').innerHTML='';
+       document.getElementById('reason').innerHTML="Reason :";
+        document.getElementById('result11').style.visibility= "visible"
+        document.getElementById('c2li').src='images/c2li.png';
+   }
+   function c3li(){
+       document.getElementById('c3li').innerHTML='CORRECT!';
+       document.getElementById('c3ld').innerHTML='';
+        document.getElementById('reason').innerHTML="Reason :";
+        document.getElementById('result11').style.visibility= "visible"
+        document.getElementById('c2li').src='images/c2li.png';
+   }
+    function c3ii_ld(){
+       document.getElementById('c3ii_li').innerHTML='CORRECT!';
+       document.getElementById('c3ii_ld').innerHTML='';
+       document.getElementById('reson2').innerHTML="Reason:";
+        document.getElementById('result21').style.visibility= "visible";
+        document.getElementById('c2ld').src='images/c2ld.png';
+   }
+   function c3ii_li(){
+       document.getElementById('c3ii_ld').innerHTML='INCORRECT!';
+       document.getElementById('c3ii_li').innerHTML='';
+       document.getElementById('reson2').innerHTML="Reason:";
+        document.getElementById('result21').style.visibility= "visible";
+        document.getElementById('c2ld').src='images/c2ld.png';
+   }
+    function case4i_ld(){
+       document.getElementById('case4i_ld').innerHTML='CORRECT!';
+       document.getElementById('case4i_li').innerHTML='';
+         document.getElementById('c4ldimg').src='images/cs3ld.png';
+        
+   }
+   function case4i_li(){
+       document.getElementById('case4i_li').innerHTML='INCORRECT!';
+       document.getElementById('case4i_ld').innerHTML='';
+       document.getElementById('c4ldimg').src='images/cs3ld.png';
+   }
+    function case4ii_ld(){
+       document.getElementById('case4ii_ld').innerHTML='INCORRECT!';
+       document.getElementById('case4ii_li').innerHTML='';
+        document.getElementById('c4liimg').src='images/cs3li.png';
+   }
+   function case4ii_li(){
+       document.getElementById('case4ii_li').innerHTML='CORRECT!';
+       document.getElementById('case4ii_ld').innerHTML='';
+        document.getElementById('c4liimg').src='images/cs3li.png';
    }
 </script>
 </html>

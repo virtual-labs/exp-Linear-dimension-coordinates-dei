@@ -50,7 +50,7 @@
     <p style="margin-left: 1rem;">NOTE: Consider the vector space R<sup>2</sup> over R</p>
     <div class="example">
         <div class="excol">
-            <h3>I. Example <br>i. B = {(1, 0), (0, 1)} &#8838; R<sup>2</sup><br><button class="subbtn" id="calcbtn"  onclick="exmp1()">Click here</button></h3>
+            <h3>I. Example <br>i. B = {(1, 0), (0, 1)} &#8838; R<sup>2</sup> is a basis<br><button class="subbtn" id="calcbtn"  onclick="exmp1()">Click here</button><span style="font-weight: normal;"> for facts about B.</span></h3>
             
                 <ul id="exmpRes1" style="display: none;">
                     <li>B is basis</li>
@@ -64,7 +64,7 @@
             <img id="eximg1" src="images/bex1.1.PNG" alt="basis example" height="250vh" width="auto">
         </div>
         <div class="excol">
-          <br><h3>ii. B = {(1, 1), (1, 2)} &#8838; R<sup>2</sup> <br> <button class="subbtn" id="calcbtn"  onclick="exmp2()">Click here </button></h3>
+          <br><h3>ii. B = {(1, 1), (1, 2)} &#8838; R<sup>2</sup> <br> <button class="subbtn" id="calcbtn"  onclick="exmp2()">Click here </button><span style="font-weight: normal;"> for facts about B.</span></h3>
            
                 <ul id="exmpRes2" style="display: none;">
                 <li>B is basis</li>
@@ -162,31 +162,35 @@
     </div>
     <div class="check">
         <h3>III. Checking whether a given nonempty subset B of R<sup>2</sup> is a basis or not?</h3>
+        <h3>Proceed Stepwise</h3>
         <div class="checkcondition">
             <div class="ckcol">
-              <p><b>Step 1 </b><button class="subbtn" onclick="step1()">Click here</button></p> 
+              <p><b>Step 1 </b><button class="subbtn" onclick="step1()">Click here</button>, if 0 &isin; B</p> 
                 <div id="stp1" style="display: none;" >
-                    <p class="checkblock"><ul><li>If 0 &isin; B, <strong>B is not a basis.</strong></li>
-                        <li>Otherwise go to Step 2.</li></ul></p>
+                    <p class="checkblock"><ul><li><strong>B is not a basis,</strong> as it is not linearly independent.</li>
+                        <!-- <li>Otherwise go to Step 2.</li> -->
+                      </ul></p>
                 </div>
                 
             </div>
             <div class="ckcol">
-                <p><b>Step 2 </b><button class="subbtn" onclick="step2()">Click here</button></p>
+                <p><b>Step 2 </b><button class="subbtn" onclick="step2()">Click here</button>, if number of elements is not 2</p>
                 <div id="stp2" style="display: none;" >
-                <ul>
-                    <li>If no. of elements in B is not 2, then B is not a basis.</li>
-                    <li>Otherwise go to Step 3.</li>
-                </ul>
+                <p><ul>
+                    <li><b>B is not a basis</b>, by properties of basis.</li>
+                    <!-- <li>Otherwise go to Step 3.</li> -->
+                </ul></p>
             </div>
             </div>
             <div class="ckcol">
-                <p><b>Step 3</b> <button class="subbtn" onclick="step3()">Clik here</button></p>
-                <div id="stp3" style="visibility:hidden;" >
+                <p><b>Step 3</b> <button class="subbtn" onclick="step3()">Click here</button>, otherwise</p>
+                <p><ul><li  id="stp3" style="visibility:hidden;" >
+B can be linearly dependent or linearly independent. For practice, choose</li></ul></p>
+                <div id="stp3">
 
 
                     <p>
-                        B = {(
+                       &emsp;&emsp;B = {(
                         <select id="uVal">
                           <option value="">u</option>
                           <option value="-2">-2</option><option value="-1">-1</option>
@@ -213,9 +217,9 @@
                         </select> )}
                       </p>
                       
-                      <button onclick="checkBasisab()">Submit</button>
+                      &emsp;&emsp;<button onclick="checkBasisab()">Submit</button>
                       
-                      <div id="result4"></div>
+                       <div id="result4"></div>
                 <!-- <p><ul><p>If B = {a, b}&subset;R<sup>2</sup>, then it may or may not be a basis. <br> Infact</p>
                     <li>b &isin; Span({a}) &#8658; <strong>B is not basis</strong></li>
                 <li>b &notin; Span({a}) &#8658; <strong>B is basis</strong></li>
@@ -256,12 +260,12 @@
               }
             
               if (u === 0 && v === 0) {
-                resultDiv.innerHTML = "Vector a = (u,v) cannot be the zero vector.";
+                resultDiv.innerHTML = "&emsp;&emsp;Vector a = (u,v) cannot be the zero vector.";
                 return;
               }
             
               if (u === w && v === x) {
-                resultDiv.innerHTML = "a and b cannot be equal.";
+                resultDiv.innerHTML = "&emsp;&emsp;a and b cannot be equal.";
                 return;
               }
             
@@ -269,9 +273,9 @@
               const det = u * x - v * w;
             
               if (det !== 0) {
-                resultDiv.innerHTML = `B is a basis.<br><b>Reason:</b> b ∉ span({a})`;
+                resultDiv.innerHTML = `&emsp;&emsp;B is a basis.<br><b>&emsp;&emsp;Reason:</b> b ∉ span({a})`;
               } else {
-                resultDiv.innerHTML = `B is not a basis.<br><b>Reason:</b> b ∈ span({a})`;
+                resultDiv.innerHTML = `&emsp;&emsp;B is not a basis.<br><b>&emsp;&emsp;Reason:</b> b ∈ span({a})`;
               }
             }
             </script>
