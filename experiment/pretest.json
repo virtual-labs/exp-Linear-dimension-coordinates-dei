@@ -10,10 +10,10 @@
         "d": "$S$<sub>4</sub>={(1, 2), (0, 0), (2, 0))}"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "By defintion",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect by definition",
+        "b": "Incorrect by definition",
+        "c": "Correct by definition",
+        "d": "Incorrect by definition"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
@@ -27,10 +27,10 @@
         "d": "$S$={1, -5$x$}"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Correct by definition",
+        "b": "Incorrect by definition",
+        "c": "Incorrect by definition",
+        "d": "Incorrect by definition"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
@@ -44,10 +44,10 @@
         "d": "$S$={(1, 0, 0), (2, 1, 0) (0, 1, 0)}"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Correct by definition",
+        "b": "Incorrect by definition",
+        "c": "Incorrect by definition",
+        "d": "Incorrect by definition"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
@@ -61,10 +61,10 @@
         "d": "$S$={(2, 5), (0, 0)}"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect by definition",
+        "b": "Correct by definition",
+        "c": "Incorrect by definition",
+        "d": "Incorrect by definition"
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -78,10 +78,10 @@
         "d": "$S$={(2, 2), (6, 6)}"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Correct by definition",
+        "b": "Incorrect by definition",
+        "c": "Incorrect by definition",
+        "d": "Incorrect by definition"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
