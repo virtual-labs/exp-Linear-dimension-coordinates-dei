@@ -10,7 +10,96 @@
         "d": "$S$<sub>4</sub>={(3, 6), (1, 5)}"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": {
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Consider the vector space $R$<sup>2</sup> over $R$. If$(x, y)$ = α(2,3) and α = -4, then find the value of $(x, y)$",
+      "answers": {
+        "a": "(2, 3)",
+        "b": "(-8, 12)",
+        "c": "(-8, -12)",
+        "d": "(8, -12)"
+      },
+      "explanations": {
+        "a": "Incorrect by definition",
+        "b": "Incorrect by definition",
+        "c": "Correct by definition",
+        "d": "Incorrect by definition"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Let $W$ be a subspace of a vector space $R$<sup>3</sup> over $R$. For $x, y, z$ &isin; $W$, which of the following is true?",
+      "answers": {
+        "a": "$x+y$ &notin; $W$, but $3x+y+z$ &isin; $W$",
+        "b": "$z+2y$ &notin; $W$, but $3x-5y+9z$ &isin; $W$",
+        "c": "$2x+(y+2z)$ &notin; $W$, but $x+(-y+7z)$ &notin; $W$",
+        "d": "$7x+y-2z$ &isin; $W,$ and $-x+y+z$ &isin; $W$"
+      },
+      "explanations": {
+        "a": "Incorrect by definition",
+        "b": "Incorrect by definition",
+        "c": "Incorrect by definition",
+        "d": "Correct by definition"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Let $S$ be a subspace of a vector space over $R$. For $S$={0}, $K$ &equiv; {α$x$+β$y$: $x, y$ &isin; $S$ and α, β &isin; $R$} equals",
+      "answers": {
+        "a": "$R$<sup>2</sup>",
+        "b": "{0}",
+        "c": "0",
+        "d": "(0, 0)"
+      },
+      "explanations": {
+        "a": "Incorrect by definition",
+        "b": "Correct by definition",
+        "c": "Incorrect by definition",
+        "d": "Incorrect by definition"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Consider the vector $R$<sup>2</sup> over $R$. Let<br>(i) (4, 8)=α(2, 3) for some αϵ$R$ <br> (ii) (2, 3)=α(1, 1)+β(-1, -1) for some α, β ϵ $R$<br>Then which of the following is true",
+      "answers": {
+        "a": "Only (i)",
+        "b": "Only (ii)",
+        "c": "Both (i) and (ii)",
+        "d": "None"
+      },
+      "explanations": {
+        "a": ""Incorrect by definition",
+        "b": "Incorrect by definition",
+        "c": "Incorrect by definition",
+        "d": "Correct by definition"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "(-4, 12) = α(-2, 0) + β(0, 6) if α and β equals to",
+      "answers": {
+        "a": "α=2, β=2",
+        "b": "α=-2, β=2",
+        "c": "α=0, β=-2",
+        "d": "α=-2, β=0"
+      },
+      "explanations": {
+        "a": "Correct by definition",
+        "b": "Incorrect by definition",
+        "c": "Incorrect by definition",
+        "d": "Incorrect by definition"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}
         "b": "By definition",
         "c": "Explanation 2",
         "d": "Explanation 2"
@@ -27,10 +116,10 @@
         "d": "$S$<sub>4</sub>={(1, 2), (2, 4)}"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect by definition",
+        "b": "Incorrect by definition",
+        "c": "Incorrect by definition",
+        "d": "Correct by definition"
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
@@ -44,10 +133,10 @@
         "d": "B<sub>4</sub>={(1, 0, 2), (1, 0, 4)}"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect by definition",
+        "b": "Correct by definition",
+        "c": "Incorrect by definition",
+        "d": "Incorrect by definition"
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -61,10 +150,10 @@
         "d": "$B$<sub>4</sub>={2+$x$, -$x$, 2}"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect by definition",
+        "b": "Correct by definition",
+        "c": "Incorrect by definition",
+        "d": "Incorrect by definition"
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -78,10 +167,10 @@
         "d": "Dim of $R$<sup>2</sup> &ne; 2, dim &straightphi; = 1"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect by definition",
+        "b": "Incorrect by definition",
+        "c": "Correct by definition",
+        "d": "Incorrect by definition"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
@@ -95,10 +184,10 @@
         "d": "2 & -1"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect by definition",
+        "b": "Incorrect by definition",
+        "c": "Incorrect by definition",
+        "d": "Correct by definition"
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
