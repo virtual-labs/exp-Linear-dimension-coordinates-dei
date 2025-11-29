@@ -324,11 +324,11 @@
       const y = document.getElementById("yVal").value;
       const x1 = document.getElementById("x1Val").value;
       const y1 = document.getElementById("y1Val").value;
-      document.getElementById("aDisplay").innerText = x && y ? `( ${x}, ${y} )` : "( x, y )";
-      document.getElementById("aDisplay2").innerText = x1 && y1 ? `( ${x1}, ${y1} )` : "( x, y )";
-      document.getElementById("aDisplay3").innerText = (x && y && x1 && y1) 
-        ? `B = {(a, b)} = {( ${x}, ${y} ), ( ${x1}, ${y1} )} is a basis.` 
-        : "B = {(a, b)} = {(x, y), (x1, y1)} is a basis.";
+      document.getElementById("aDisplay").innerHTML = x && y ? `( ${x}, ${y} )` : "( x, y )";
+      document.getElementById("aDisplay2").innerHTML = x1 && y1 ? `( ${x1}, ${y1} )` : "( x, y )";
+      document.getElementById("aDisplay3").innerHTML = (x && y && x1 && y1) 
+        ? `<i>B</i> = {(<i>a, b</i>)} = {( ${x}, ${y} ), ( ${x1}, ${y1} )} is a basis.` 
+        : "<i>B</i> = {(<i>a, b</i>)} = {(<i>x, y</i>), (<i>x</i>1, <i>y</i>1)} is a basis.";
 }
     
   
