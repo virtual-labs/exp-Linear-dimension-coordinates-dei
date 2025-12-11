@@ -1,4 +1,4 @@
-This experiment will help students understand the key ideas in linear algebra, namely linear independence, basis, dimension, and coordinates. These concepts are essential while working with vector spaces. Students will learn how to determine whether vectors are linearly independent, how a basis can be formed and how to express any vector in terms of a chosen basis to determine co-ordinates. 
+This experiment will help students understand the key ideas in linear algebra, namely linear independence, basis, dimension, and coordinates. These concepts are essential while working with vector spaces. Students will learn how to determine whether vectors are linearly independent, how a basis can be formed and how to express any vector in terms of a chosen basis to determine co-ordinates.<br>
 **Notation**: Vector space over the field <i>F</i>≡<i>R</i> or <i>C</i>  is denoted by <i>V</i>, where <i>R</i> is the set of real numbers and <i>C</i> is the set of complex numbers.<br>
 ### 1. Linearly independence:
 #### 1.1. Linearly dependent set:
