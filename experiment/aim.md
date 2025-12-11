@@ -1,1 +1,1 @@
-### Aim of this experiment is to study the fundamental notions namely, linear independence, basis, dimension and co-ordinates.
+### The aim of this experiment is to study the fundamental notions namely, linear independence, basis, dimension and co-ordinates.
