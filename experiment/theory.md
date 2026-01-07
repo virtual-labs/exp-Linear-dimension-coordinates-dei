@@ -70,7 +70,7 @@ Let <i>V</i> be a vector space and <i>x</i>&isin;<i>V</i> and let <i>B</i>={<i>e
 #### <span style="font-family: 'Times New Roman'; font-size: 22px;">4.1. Examples:</span>
 <span style="font-family: 'Times New Roman'; font-size: 22px;">Let <i>R</i><sup>2</sup> be the vector space over <i>R</i>.</span>
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">1. Consider a basis <i>B</i>={(1, 1), (1, 0)} of the vector space <i>R</i><sup></sup> over <i>R</i>. Then (2, 3)&isin;<i>R</i><sup>2</sup> can be written as (2, 3)=<i>α</i>(1, 1)+<i>β</i>(1, 0). This implies that <i>α</i>=3 and <i>β</i>=-1 Thus co-ordinates of (2, 3) w.r.t. the basis <i>B</i> are 3, -1.<br>
-2. If <i>B</i>={<i>e</i><sub>1</sub>, <i>e</i><sub>2</sub>} is a basis of the vector space <i>R</i><sup>2</sup> over <i>R</i>, then<br>
+<span style="font-family: 'Times New Roman'; font-size: 22px;"><ol><li>1. Consider a basis <i>B</i>={(1, 1), (1, 0)} of the vector space <i>R</i><sup></sup> over <i>R</i>. Then (2, 3)&isin;<i>R</i><sup>2</sup> can be written as (2, 3)=<i>α</i>(1, 1)+<i>β</i>(1, 0). This implies that <i>α</i>=3 and <i>β</i>=-1 Thus co-ordinates of (2, 3) w.r.t. the basis <i>B</i> are 3, -1.</li>
+<li>If <i>B</i>={<i>e</i><sub>1</sub>, <i>e</i><sub>2</sub>} is a basis of the vector space <i>R</i><sup>2</sup> over <i>R</i>, then</li></ol>
 (i) The co-ordinates of <i>e</i><sub>1</sub> w.r.t. the basis <i>B</i> are 1, 0 since <i>e</i><sub>1</sub>=1.<i>e</i><sub>1</sub>+0.<i>e</i><sub>2</sub>.<br>
 (ii) The co-ordinates of <i>e</i><sub>2</sub> w.r.t. the basis <i>B</i> are 0, 1 since <i>e</i><sub>2</sub>=0.<i>e</i><sub>1</sub>+1.<i>e</i><sub>2</sub>.</span>
