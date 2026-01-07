@@ -1,1 +1,1 @@
-## Linear Independence, Basis, Dimension and Co-ordinates
+## Linear independence, basis, dimension and co-ordinates
