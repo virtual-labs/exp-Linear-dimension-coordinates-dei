@@ -19,7 +19,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "2. Consider the vector space $P$<sub>2</sub>($x$) over $R$.Then which of the following sets can span $P$<sub>2</sub>($x$)?",
+      "question": "2. Consider the vector space $P$<sub>2</sub>($x$) over $R$. Then which of the following sets can span $P$<sub>2</sub>($x$)?",
       "answers": {
         "a": "$S$={1, 2$x$, $x$<sub>2</sub>+2}",
         "b": "$S$={$x$-$x$<sup>2</sup>, -$x$, $x$<sup>2</sup>}",
@@ -36,7 +36,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "3. Consider the vector space $R$<sup>3</sup> over $R$.Then which of the following sets can span $R$<sup>3</sup>?",
+      "question": "3. Consider the vector space $R$<sup>3</sup> over $R$. Then which of the following sets can span $R$<sup>3</sup>?",
       "answers": {
         "a": "$S$={(2, 0, -2), (3, 1, 1), (2, 0, 0) (0, 0, 1)}",
         "b": "$S$={(1, 0, 2), (1, -1, 1), (0, 0, 0)}",
