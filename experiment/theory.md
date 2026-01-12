@@ -6,7 +6,7 @@
 
 ![Linearly dependent set](images/exp4newimage1.PNG "Linearly dependent set")<br>
 #### <span style="font-family: 'Times New Roman'; font-size: 22px;">1.2. Linearly independent set:</span>
-<span style="font-family: 'Times New Roman'; font-size: 22px;">Let &straightphi;≠<i>S</i>⊆<i>V</i>. Then <i>S</i> is said to be a linearly independent set if it is not linearly dependent. The non-empty set &straightphi; is defined to be linearly independent.<br>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">Let &straightphi;≠<i>S</i>⊆<i>V</i>. Then <i>S</i> is said to be a linearly independent set if it is not linearly dependent. Note that the non-empty set &straightphi; is defined to be linearly independent.<br>
 To show that <i>S</i>={<i>a</i>, <i>b</i>}⊆<i>V</i> is linearly independent, one needs to show that <i>b</i>≠<i>αa</i> and <i>a</i>≠<i>βb</i>, for any scalars <i>α</i> and <i>β</i>.
 Similarly, to show that <i>S</i>={<i>a, b, c</i>}⊆<i>V</i> is linearly independent one needs to show that none of <i>a</i>, <i>b</i> and <i>c</i> is a linear combination of the other two elements.<br></span>
 
