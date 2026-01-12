@@ -8,10 +8,10 @@
 #### <span style="font-family: 'Times New Roman'; font-size: 22px;">1.2. Linearly independent set:</span>
 <span style="font-family: 'Times New Roman'; font-size: 22px;">Let &straightphi;≠<i>S</i>⊆<i>V</i>. Then <i>S</i> is said to be a linearly independent set if it is not linearly dependent. Notice that the empty set &straightphi; is defined to be linearly independent.<br>
 Now to show that <i>S</i>={<i>a</i>, <i>b</i>}⊆<i>V</i> is linearly independent, one needs to show that <i>b</i>≠<i>αa</i> and <i>a</i>≠<i>βb</i>, for any scalars <i>α</i> and <i>β</i>.
-Similarly, to show that <i>S</i>={<i>a, b, c</i>}⊆<i>V</i> is linearly independent one needs to show that none of <i>a</i>, <i>b</i> and <i>c</i> is a linear combination of the other two elements.<br></span>
-
-![Linearly independent set](images/exp4newimage2.PNG "Linearly independent set")<br>
+Similarly, to show that <i>S</i>={<i>a, b, c</i>}⊆<i>V</i> is linearly independent one needs to show that none of <i>a</i>, <i>b</i> and <i>c</i> is a linear combination of the other two elements.</span>
 <span style="font-family: 'Times New Roman'; font-size: 22px;">General method to show linear independence is provided in the proposition given below.</span>
+![Linearly independent set](images/exp4newimage2.PNG "Linearly independent set")<br>
+
 #### <span style="font-family: 'Times New Roman'; font-size: 22px;">1.3. Proposition:</span>
 <span style="font-family: 'Times New Roman'; font-size: 22px;">Let &straightphi;≠<i>S</i>⊆<i>V</i>. Then <i>S</i> is linearly independent if and only if [<i>α</i><sub>1</sub><i>x</i><sub>1</sub>+ <i>α</i><sub>2</sub><i>x</i><sub>2</sub>+ …+<i>α</i><sub><i>n</i></sub><i>x</i><sub><i>n</i></sub>=0 &#8658; <i>α</i><sub><i>i</i></sub>=0, for all <i>i</i>=1, 2, …, <i>n</i>; where <i>α</i><sub>1</sub>, <i>α</i><sub>2</sub>, ..., <i>α</i><sub><i>n</i></sub>&isin;<i>F</i>, <i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>, …, <i>x</i><sub><i>n</i></sub>&isin;<i>S</i>].</span>
 #### <span style="font-family: 'Times New Roman'; font-size: 22px;">Proof: Sufficient part:</span>
