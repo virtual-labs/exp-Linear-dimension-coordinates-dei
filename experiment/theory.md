@@ -2,15 +2,15 @@
 <b>Notation:</b> Vector space over the field <i>F</i>≡<i>R</i> or <i>C</i>  is denoted by <i>V</i>, where <i>R</i> is the set of real numbers and <i>C</i> is the set of complex numbers.<br></span>
 ### <span style="font-family: 'Times New Roman'; font-size: 22px;">1. Linearly independence:</span>
 #### <span style="font-family: 'Times New Roman'; font-size: 22px;">1.1. Linearly dependent set:</span>
-<span style="font-family: 'Times New Roman'; font-size: 22px;">Let <i>&straightphi;</i>≠<i>S</i>⊆<i>V</i>. If <i>x</i>&isin;<i>S</i> be such that <i>x</i> is a linear combination of some other elements of <i>S</i>, then <i>S</i> is said to be linearly dependent. In other words, if <i>S</i> is linearly dependent, then for some <i>x</i>&isin;<i>S</i>, there exists <i>y</i><sub>1</sub>, <i>y</i><sub>2</sub>, …,<i>y</i><sub><i>n</i></sub>&isin;<i>S</i>, which are different from <i>x</i> such that <i>x</i>=<i>α</i><sub>1</sub><i>y</i><sub>1</sub>+<i>α</i><sub>2</sub><i>y</i><sub>2</sub>+ …+<i>α</i><sub><i>n</i></sub><i>y</i><sub><i>n</i></sub>, for some <i>α</i><sub>1</sub>, <i>α</i><sub>2</sub>, ..., <i>α</i><sub><i>n</i></sub>&isin;<i>F</i>. Notice that in this case, (-1)<i>x</i>+<i>α</i><sub>1</sub><i>y</i><sub>1</sub>+<i>α</i><sub>2</sub><i>y</i><sub>2</sub>+ …+ <i>α</i><sub><i>n</i></sub><i>y</i><sub><i>n</i></sub>=0, i.e. there exists a linear combination of elements of <i>S</i> which equals zero, but not all coefficients are zero. Any set containing zero vector is linearly dependent.</span>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">Let <i>&straightphi;</i>≠<i>S</i>⊆<i>V</i>. If <i>x</i>&isin;<i>S</i> be such that <i>x</i> is a linear combination of some other elements of <i>S</i>, then <i>S</i> is said to be linearly dependent. In other words, if <i>S</i>(as given in Fig.1) is linearly dependent, then for some <i>x</i>&isin;<i>S</i>, there exists <i>y</i><sub>1</sub>, <i>y</i><sub>2</sub>, …,<i>y</i><sub><i>n</i></sub>&isin;<i>S</i>, which are different from <i>x</i> such that <i>x</i>=<i>α</i><sub>1</sub><i>y</i><sub>1</sub>+<i>α</i><sub>2</sub><i>y</i><sub>2</sub>+ …+<i>α</i><sub><i>n</i></sub><i>y</i><sub><i>n</i></sub>, for some <i>α</i><sub>1</sub>, <i>α</i><sub>2</sub>, ..., <i>α</i><sub><i>n</i></sub>&isin;<i>F</i>. Notice that in this case, (-1)<i>x</i>+<i>α</i><sub>1</sub><i>y</i><sub>1</sub>+<i>α</i><sub>2</sub><i>y</i><sub>2</sub>+ …+ <i>α</i><sub><i>n</i></sub><i>y</i><sub><i>n</i></sub>=0, i.e. there exists a linear combination of elements of <i>S</i> which equals zero, but not all coefficients are zero. Any set containing zero vector is linearly dependent.</span>
 
 ![Linearly dependent set](images/exp4newimage1.PNG "Linearly dependent set")<br>
 #### <span style="font-family: 'Times New Roman'; font-size: 22px;">1.2. Linearly independent set:</span>
-<span style="font-family: 'Times New Roman'; font-size: 22px;">Let &straightphi;≠<i>S</i>⊆<i>V</i>. Then <i>S</i> is said to be a linearly independent set if it is not linearly dependent. Notice that the empty set &straightphi; is defined to be linearly independent.<br>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">Let &straightphi;≠<i>S</i>⊆<i>V</i>. Then <i>S</i> (as given in Fig.2) is said to be a linearly independent set if it is not linearly dependent. Notice that the empty set &straightphi; is defined to be linearly independent.<br>
 Now to show that <i>S</i>={<i>a</i>, <i>b</i>}⊆<i>V</i> is linearly independent, one needs to show that <i>b</i>≠<i>αa</i> and <i>a</i>≠<i>βb</i>, for any scalars <i>α</i> and <i>β</i>.
 Similarly, to show that <i>S</i>={<i>a, b, c</i>}⊆<i>V</i> is linearly independent one needs to show that none of <i>a</i>, <i>b</i> and <i>c</i> is a linear combination of the other two elements.</span>
-<span style="font-family: 'Times New Roman'; font-size: 22px;">General method to show linear independence is provided in the proposition given below.</span>
-![Linearly independent set](images/exp4newimage2.PNG "Linearly independent set")<br>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">General method to show linear independence is provided in the proposition given below.</span><br>
+![Linearly independent set](images/exp4newimage2.PNG "Linearly independent set")
 
 #### <span style="font-family: 'Times New Roman'; font-size: 22px;">1.3. Proposition:</span>
 <span style="font-family: 'Times New Roman'; font-size: 22px;">Let &straightphi;≠<i>S</i>⊆<i>V</i>. Then <i>S</i> is linearly independent if and only if [<i>α</i><sub>1</sub><i>x</i><sub>1</sub>+ <i>α</i><sub>2</sub><i>x</i><sub>2</sub>+ …+<i>α</i><sub><i>n</i></sub><i>x</i><sub><i>n</i></sub>=0 &#8658; <i>α</i><sub><i>i</i></sub>=0, for all <i>i</i>=1, 2, …, <i>n</i>; where <i>α</i><sub>1</sub>, <i>α</i><sub>2</sub>, ..., <i>α</i><sub><i>n</i></sub>&isin;<i>F</i>, <i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>, …, <i>x</i><sub><i>n</i></sub>&isin;<i>S</i>].</span>
@@ -42,7 +42,7 @@ Justification: Let <i>α</i>(1)+<i>β</i>(<i>x</i>)+<i>γ</i>(<i>x</i><sup>2</su
 (iv) Superset of a linearly dependent set is linearly dependent.<br></span>
 
 ### <span style="font-family: 'Times New Roman'; font-size: 22px;">2. Basis:</span>
-A non-empty subset <i>S</i> of <i>V</i> is said to be a basis if <i>S</i> is a linearly independent set and spans <i>V</i>.</span>
+A non-empty subset <i>B</i> (as given in Fig.3) of <i>V</i> is said to be a basis if <i>B</i> is a linearly independent set and spans <i>V</i>.</span>
 
 ![Basis](images/exp4image3.PNG "Basis")<br>
 #### <span style="font-family: 'Times New Roman'; font-size: 22px;">2.1. Examples:</span>
