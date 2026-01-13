@@ -38,6 +38,7 @@ Justification: Clearly, (2, 7) is a linear combination of (0, 1), (1, 2) as
 <b>Remark.</b> <i>a</i>(0, 1)+<i>b</i>(1, 2)+<i>c</i>(2, 7)=0 ⇒ (<i>b</i>+2<i>c</i>, <i>a</i>+2<i>b</i>+7<i>c</i>)=0 implies that <i>b</i>+2<i>c</i>=0 and <i>a</i>+2<i>b</i>+7<i>c</i>=0 which does not imply that <i>a</i>=<i>b</i>=<i>c</i>=0. Hence it does not determine whether <i>S</i> is linearly dependent or independent. It only gives a clue.<br><br>
 (ii) <i>S</i>={(1, 2),(1, 0)} is linearly independent. <br>
 Justification: <i>a</i>(1, 2)+<i>b</i>(1, 0)=(0, 0) ⇒ (<i>a</i>, 2<i>b</i>)+(<i>b</i>, 0)=(0, 0) ⇒ (<i>a</i>+<i>b</i>, 2<i>b</i>)=(0, 0). Thus <i>a</i>=0, <i>b</i>=0. Hence, both the coefficients are zero therefore, <i>S</i> is linearly independent.</span>
+<br><br>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">1.5. Example-II:</span>**
 
