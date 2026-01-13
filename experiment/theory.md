@@ -30,6 +30,7 @@ Let <i>S</i> be linearly independent. To the contrary, let <i>α</i><sub>1</sub>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">1.4. Example-I:</b></span>**
 
+<span style="font-family: 'Times New Roman'; font-size: 22px;">
 Consider <i>R</i><sup>2</sup> be the vector space over <i>R</i>, where <i>S</i>⊆<i>R</i><sup>2</sup>.<br><br>
 (i) <i>S</i>={(0, 1), (1, 2), (2, 7)} is linearly dependent. <br>
 Justification: Clearly, (2, 7) is a linear combination of (0, 1), (1, 2) as
@@ -81,8 +82,11 @@ Justification: Let <i>α</i>(1)+<i>β</i>(<i>x</i>)+<i>γ</i>(<i>x</i><sup>2</su
 4. Let <i>B</i> be a subset of <i>V</i>. Then the following are equivalent.<br>
 &emsp; a. <i>B</i> is basis.<br>
 &emsp; b. <i>B</i> is a minimal generating set, that is no proper subset of <i>B</i> can generate <i>V</i>.<br>
-&emsp; c. <i>B</i> is a maximal linearly independent set.<br><br>
-<b>4. Co-ordinates:</b><br>
+&emsp; c. <i>B</i> is a maximal linearly independent set.</span>
+
+**<span style="font-family: 'Times New Roman'; font-size: 22px;">4. Co-ordinates:</span>**
+
+<span style="font-family: 'Times New Roman'; font-size: 22px;">
 Let <i>V</i> be a vector space and <i>x</i>&isin;<i>V</i> and let <i>B</i>={<i>e</i><sub>1</sub>, <i>e</i><sub>2</sub>} be a basis. Then <i>x</i>=<i>αe</i><sub>1</sub>+<i>βe</i><sub>2</sub>, for some <i>α, β</i>&isin;<i>F</i>. These scalars <i>α</i> and <i>β</i> are called the co-ordinates of <i>x</i> w.r.t. the basis {<i>e</i><sub>1</sub>, <i>e</i><sub>2</sub>} as shown in the Fig.5.</span> <br>
 
 ![Co-ordinates](images/exp5image5.PNG "Co-ordinates")<br>
