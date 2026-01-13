@@ -8,9 +8,9 @@
 
 <body>
    
-        <a href="./" class="previous" style="float: center; align-content:right;">&laquo; Previous</a> <br><br><br>
+    <a href="./" class="previous" style="float: center; align-content:right;">&laquo; Previous</a> <br><br><br>
     <h2 class="pagehead">Basis, Dimension and Co-ordinates</h2>
-    <p style="margin-left: 1rem;">NOTE: Consider the vector space <i>R</i><sup>2</sup> over <i>R</i></p>
+    <h3 style="margin-left: 1rem;font-size: 1.2rem;">NOTE: Consider the vector space <i>R</i><sup>2</sup> over <i>R</i></h3>
     <div class="example">
         <div class="excol">
             <h3>I. Example <br>i. <i>B</i> = {(1, 0), (0, 1)} &#8838; <i>R</i><sup>2</sup><br><button class="subbtn" id="calcbtn"  onclick="exmp1()">Click here</button><span style="font-weight: normal;"> (for facts related to <i>B</i>)</span></h3>
@@ -27,7 +27,7 @@
             <img id="eximg1" src="images/bex1.1.PNG" alt="basis example" height="250vh" width="auto">
         </div>
         <div class="excol">
-          <br><h3>ii. <i>B</i> = {(1, 1), (1, 2)} &#8838; R<sup>2</sup> <br> <button class="subbtn" id="calcbtn"  onclick="exmp2()">Click here </button><span style="font-weight: normal;"> ( for facts related to <i>B</i>)</span></h3>
+          <br><h3>ii. <i>B</i> = {(1, 1), (1, 2)} &#8838; R<sup>2</sup> <br> <button class="subbtn" id="calcbtn"  onclick="exmp2()">Click here </button><span style="font-weight: normal;"> (for facts related to <i>B</i>)</span></h3>
            
                 <ul id="exmpRes2" style="display: none;">
                 <li><i>B</i> is basis</li>
@@ -148,9 +148,9 @@
             <div class="ckcol">
                 <p><b>Step 3</b> <button class="subbtn" onclick="step3()">Click here</button>, otherwise</p>
                 <p><ul><li  id="stp3" style="visibility:hidden;" >
-<i>B</i> can be linearly dependent or linearly independent. For practice, choose</li></ul></p>
+<i>B</i> may or may not be a basis.</li></ul></p>
                 <div id="stp3">
-
+                  <p><b>Example</b></p>
 
                     <p>
                        &emsp;&emsp;<i>B</i> = {(
@@ -218,7 +218,7 @@
             
               // Validation
               if (isNaN(u) || isNaN(v) || isNaN(w) || isNaN(x)) {
-                resultDiv.innerHTML = "Please select all values.";
+                resultDiv.innerHTML = "&emsp;&emsp;Please select all values.";
                 return;
               }
             
