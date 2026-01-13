@@ -23,11 +23,13 @@ Similarly, to show that <i>S</i>={<i>a, b, c</i>}⊆<i>V</i> is linearly indepen
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">Proof: Sufficient part:</span>**
 
 <span style="font-family: 'Times New Roman'; font-size: 22px;">Let <i>α</i><sub><i>i</i></sub>=0, for all <i>i</i>=1, 2, …,<i>n</i>;
-whenever <i>α</i><sub>1</sub><i>x</i><sub>1</sub>+ <i>α</i><sub>2</sub><i>x</i><sub>2</sub>+ …+<i>α</i><sub><i>n</i></sub><i>x</i><sub><i>n</i></sub>=0, where <i>α</i><sub>1</sub>, <i>α</i><sub>2</sub>, ..., <i>α</i><sub><i>n</i></sub>&isin;<i>F</i>, <i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>, …, <i>x</i><sub><i>n</i></sub>&isin;<i>S</i>. To the contrary, let <i>S</i> be linearly dependent. By definition of a linearly dependent set, there exists <i>x</i>&isin;<i>S</i>, such that <i>x</i>=<i>α</i><sub>1</sub><i>y</i><sub>1</sub>+ <i>α</i><sub>2</sub><i>y</i><sub>2</sub>+ …+ <i>α</i><sub><i>n</i></sub><i>y</i><sub><i>n</i></sub>, for some <i>α</i><sub>1</sub>, <i>α</i><sub>2</sub>, ..., <i>α</i><sub><i>n</i></sub>&isin;<i>F</i>, <i>y</i><sub>1</sub>, <i>y</i><sub>2</sub>, …, <i>y</i><sub><i>n</i></sub>&isin;<i>S</i>. Thus (-1)x+<i>α</i><sub>1</sub><i>y</i><sub>1</sub>+<i>α</i><sub>2</sub><i>y</i><sub>2</sub>+ …+ <i>α</i><sub><i>n</i></sub><i>y</i><sub><i>n</i></sub>=0. By hypothesis, -1=0. This is a contradiction.<br><br>
+whenever <i>α</i><sub>1</sub><i>x</i><sub>1</sub>+ <i>α</i><sub>2</sub><i>x</i><sub>2</sub>+ …+<i>α</i><sub><i>n</i></sub><i>x</i><sub><i>n</i></sub>=0, where <i>α</i><sub>1</sub>, <i>α</i><sub>2</sub>, ..., <i>α</i><sub><i>n</i></sub>&isin;<i>F</i>, <i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>, …, <i>x</i><sub><i>n</i></sub>&isin;<i>S</i>. To the contrary, let <i>S</i> be linearly dependent. By definition of a linearly dependent set, there exists <i>x</i>&isin;<i>S</i>, such that <i>x</i>=<i>α</i><sub>1</sub><i>y</i><sub>1</sub>+ <i>α</i><sub>2</sub><i>y</i><sub>2</sub>+ …+ <i>α</i><sub><i>n</i></sub><i>y</i><sub><i>n</i></sub>, for some <i>α</i><sub>1</sub>, <i>α</i><sub>2</sub>, ..., <i>α</i><sub><i>n</i></sub>&isin;<i>F</i>, <i>y</i><sub>1</sub>, <i>y</i><sub>2</sub>, …, <i>y</i><sub><i>n</i></sub>&isin;<i>S</i>. Thus (-1)x+<i>α</i><sub>1</sub><i>y</i><sub>1</sub>+<i>α</i><sub>2</sub><i>y</i><sub>2</sub>+ …+ <i>α</i><sub><i>n</i></sub><i>y</i><sub><i>n</i></sub>=0. By hypothesis, -1=0. This is a contradiction.<br>
 <b>Necessary part:</b>
 Let <i>S</i> be linearly independent. To the contrary, let <i>α</i><sub>1</sub><i>x</i><sub>1</sub>+ <i>α</i><sub>2</sub><i>x</i><sub>2</sub>+ …+ <i>α</i><sub><i>n</i></sub><i>x</i><sub><i>n</i></sub>=0 and <i>α</i><sub><i>i</i></sub>≠0, for some <i>i</i>=1, 2, …, <i>n</i>. Clearly -<i>α</i><sub><i>i</i></sub><i>x</i><sub><i>i</i></sub>=<i>α</i><sub>1</sub><i>x</i><sub>1</sub>+ <i>α</i><sub>2</sub><i>x</i><sub>2</sub>+ …+
-<i>α</i><sub><i>i</i>-1</sub><i>x</i><sub><i>i</i>-1</sub>+<i>α</i><sub><i>i</i>+1</sub><i>x</i><sub><i>i</i>+1</sub>+…+ <i>α</i><sub><i>n</i></sub><i>x</i><sub><i>n</i></sub>. Hence <i>x</i> <sub><i>i</i></sub>=-<i>α</i><sub><i>i</i></sub><sup>-1</sup>(<i>α</i><sub>1</sub><i>x</i><sub>1</sub>+<i>α</i><sub>2</sub><i>x</i><sub>2</sub>+ …+ <i>α</i><sub><i>i</i>-1</sub><i>x</i><sub><i>i</i>-1</sub>+<i>α</i><sub><i>i</i>+1</sub><i>x</i><sub><i>i</i>+1</sub>+…+ <i>α</i><sub><i>n</i></sub><i>x</i><sub><i>n</i></sub>). Note that <i>α</i><sub><i>i</i></sub><sup>-1</sup> exists because <i>α</i><sub><i>i</i></sub>≠0. Hence <i>S</i> is linearly dependent, a contradiction.<br><br>
-<b>1.4. Example-I:</b><br><br>
+<i>α</i><sub><i>i</i>-1</sub><i>x</i><sub><i>i</i>-1</sub>+<i>α</i><sub><i>i</i>+1</sub><i>x</i><sub><i>i</i>+1</sub>+…+ <i>α</i><sub><i>n</i></sub><i>x</i><sub><i>n</i></sub>. Hence <i>x</i> <sub><i>i</i></sub>=-<i>α</i><sub><i>i</i></sub><sup>-1</sup>(<i>α</i><sub>1</sub><i>x</i><sub>1</sub>+<i>α</i><sub>2</sub><i>x</i><sub>2</sub>+ …+ <i>α</i><sub><i>i</i>-1</sub><i>x</i><sub><i>i</i>-1</sub>+<i>α</i><sub><i>i</i>+1</sub><i>x</i><sub><i>i</i>+1</sub>+…+ <i>α</i><sub><i>n</i></sub><i>x</i><sub><i>n</i></sub>). Note that <i>α</i><sub><i>i</i></sub><sup>-1</sup> exists because <i>α</i><sub><i>i</i></sub>≠0. Hence <i>S</i> is linearly dependent, a contradiction.</span>
+
+**<span style="font-family: 'Times New Roman'; font-size: 22px;">1.4. Example-I:</b></span>**
+
 Consider <i>R</i><sup>2</sup> be the vector space over <i>R</i>, where <i>S</i>⊆<i>R</i><sup>2</sup>.<br><br>
 (i) <i>S</i>={(0, 1), (1, 2), (2, 7)} is linearly dependent. <br>
 Justification: Clearly, (2, 7) is a linear combination of (0, 1), (1, 2) as
@@ -57,6 +59,7 @@ Justification: Let <i>α</i>(1)+<i>β</i>(<i>x</i>)+<i>γ</i>(<i>x</i><sup>2</su
 ![Basis](images/exp4image3.PNG "Basis")<br>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">2.1. Example:</span>**
+
 <span style="font-family: 'Times New Roman'; font-size: 22px;">1. Let <i>S</i> be the linearly independent set as given in Example 5 (i). It can be seen that <i>S</i> spans <i>R</i><sup>3</sup>. Hence <i>S</i> is a basis for <i>R</i><sup>3</sup>.<br>
 2. Let <i>S</i> be the linearly independent set as given in Example 5 (ii). It can be seen that <i>S</i> spans <i>P</i><sub>2</sub>(<i>x</i>). Hence <i>S</i> is a basis for <i>P</i><sub>2</sub>(<i>x</i>). <br>
 
@@ -68,7 +71,8 @@ Justification: Let <i>α</i>(1)+<i>β</i>(<i>x</i>)+<i>γ</i>(<i>x</i><sup>2</su
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">3.1. Example:</span>**
 
 <span style="font-family: 'Times New Roman'; font-size: 22px;">1. In Example 5 (i) the Dim of <i>S</i> is 3.<br>
-2. In Example 5 (ii) the Dim of <i>S</i> is 3. </span><br>
+2. In Example 5 (ii) the Dim of <i>S</i> is 3. </span>
+
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">3.2. Properties of basis and dimension:</span>**
 
 <span style="font-family: 'Times New Roman'; font-size: 22px;">1. Let <i>V</i> have a finite basis. Then every basis for <i>V</i> contains the same number of vectors.<br>
@@ -77,8 +81,8 @@ Justification: Let <i>α</i>(1)+<i>β</i>(<i>x</i>)+<i>γ</i>(<i>x</i><sup>2</su
 4. Let <i>B</i> be a subset of <i>V</i>. Then the following are equivalent.<br>
 &emsp; a. <i>B</i> is basis.<br>
 &emsp; b. <i>B</i> is a minimal generating set, that is no proper subset of <i>B</i> can generate <i>V</i>.<br>
-&emsp; c. <i>B</i> is a maximal linearly independent set.<br>
-<b>4. Co-ordinates:</b>
+&emsp; c. <i>B</i> is a maximal linearly independent set.<br><br>
+<b>4. Co-ordinates:</b><br>
 Let <i>V</i> be a vector space and <i>x</i>&isin;<i>V</i> and let <i>B</i>={<i>e</i><sub>1</sub>, <i>e</i><sub>2</sub>} be a basis. Then <i>x</i>=<i>αe</i><sub>1</sub>+<i>βe</i><sub>2</sub>, for some <i>α, β</i>&isin;<i>F</i>. These scalars <i>α</i> and <i>β</i> are called the co-ordinates of <i>x</i> w.r.t. the basis {<i>e</i><sub>1</sub>, <i>e</i><sub>2</sub>} as shown in the Fig.5.</span> <br>
 
 ![Co-ordinates](images/exp5image5.PNG "Co-ordinates")<br>
