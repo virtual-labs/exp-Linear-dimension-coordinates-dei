@@ -20,7 +20,7 @@ whenever <i>α</i><sub>1</sub><i>x</i><sub>1</sub>+ <i>α</i><sub>2</sub><i>x</i
 <b>Necessary part:</b>
 Let <i>S</i> be linearly independent. To the contrary, let <i>α</i><sub>1</sub><i>x</i><sub>1</sub>+ <i>α</i><sub>2</sub><i>x</i><sub>2</sub>+ …+ <i>α</i><sub><i>n</i></sub><i>x</i><sub><i>n</i></sub>=0 and <i>α</i><sub><i>i</i></sub>≠0, for some <i>i</i>=1, 2, …, <i>n</i>. Clearly -<i>α</i><sub><i>i</i></sub><i>x</i><sub><i>i</i></sub>=<i>α</i><sub>1</sub><i>x</i><sub>1</sub>+ <i>α</i><sub>2</sub><i>x</i><sub>2</sub>+ …+
 <i>α</i><sub><i>i</i>-1</sub><i>x</i><sub><i>i</i>-1</sub>+<i>α</i><sub><i>i</i>+1</sub><i>x</i><sub><i>i</i>+1</sub>+…+ <i>α</i><sub><i>n</i></sub><i>x</i><sub><i>n</i></sub>. Hence <i>x</i> <sub><i>i</i></sub>=-<i>α</i><sub><i>i</i></sub><sup>-1</sup>(<i>α</i><sub>1</sub><i>x</i><sub>1</sub>+<i>α</i><sub>2</sub><i>x</i><sub>2</sub>+ …+ <i>α</i><sub><i>i</i>-1</sub><i>x</i><sub><i>i</i>-1</sub>+<i>α</i><sub><i>i</i>+1</sub><i>x</i><sub><i>i</i>+1</sub>+…+ <i>α</i><sub><i>n</i></sub><i>x</i><sub><i>n</i></sub>). Note that <i>α</i><sub><i>i</i></sub><sup>-1</sup> exists because <i>α</i><sub><i>i</i></sub>≠0. Hence <i>S</i> is linearly dependent, a contradiction.<br><br>
-<b>1.4. Examples-I:</b>
+<b>1.4. Example-I:</b>
 Consider <i>R</i><sup>2</sup> be the vector space over <i>R</i>, where <i>S</i>⊆<i>R</i><sup>2</sup>.<br><br>
 (i) <i>S</i>={(0, 1), (1, 2), (2, 7)} is linearly dependent. <br>
 Justification: Clearly, (2, 7) is a linear combination of (0, 1), (1, 2) as given below:
@@ -29,13 +29,13 @@ Justification: Clearly, (2, 7) is a linear combination of (0, 1), (1, 2) as give
 (ii) <i>S</i>={(1, 2),(1, 0)} is linearly independent. <br>
 Justification: <i>a</i>(1, 2)+<i>b</i>(1, 0)=(0, 0) ⇒ (<i>a</i>, 2<i>b</i>)+(<i>b</i>, 0)=(0, 0) ⇒ (<i>a</i>+<i>b</i>, 2<i>b</i>)=(0, 0). Thus <i>a</i>=0, <i>b</i>=0. Hence, both the coefficients are zero therefore, <i>S</i> is linearly independent.</span>
 
-#### <span style="font-family: 'Times New Roman'; font-size: 22px;">1.5. Examples-II:</span>
+#### <span style="font-family: 'Times New Roman'; font-size: 22px;">1.5. Example-II:</span>
 <span style="font-family: 'Times New Roman'; font-size: 22px;">(i) Consider the vector space <i>R</i><sup>3</sup> over <i>R</i>. Then <i>S</i>={(1, 0, 0), (0, 1, 0), (0, 0, 1)} is linearly independent.
 Justification: Let <i>α</i>(1, 0, 0)+<i>β</i>(0, 1, 0)+<i>γ</i>(0, 0, 1)=0; for <i>α, β, γ</i>&isin;<i>R</i>. By solving this we get <i>α</i>=0, <i>β</i>=0, <i>γ</i>=0 which implies by definition, that <i>S</i> is linearly independent.<br>
 (ii.) Consider the vector space <i>P</i><sub>2</sub>(<i>x</i>) over <i>R</i>. Then <i>S</i>={1, <i>x</i>, <i>x</i><sup>2</sup>+1} is linearly independent.
 Justification: Let <i>α</i>(1)+<i>β</i>(<i>x</i>)+<i>γ</i>(<i>x</i><sup>2</sup>+1)=0; for <i>α, β, γ</i>&isin;<i>R</i>. By solving this we get <i>α</i>=0, <i>β</i>=0, <i>γ</i>=0 which implies by definition, that <i>S</i> is linearly independent.</span>
 
-#### <span style="font-family: 'Times New Roman'; font-size: 22px;">1.6. Properties of linearly independent andb linearly dependent sets:</span>
+#### <span style="font-family: 'Times New Roman'; font-size: 22px;">1.6. Properties of linearly independent and linearly dependent sets:</span>
 <span style="font-family: 'Times New Roman'; font-size: 22px;">(i) Any set containing the zero vector is linearly dependent. In particular, {0} is linearly dependent. <br>
 (ii) Singleton set containing a non-zero vector is linearly independent. <br>
 (iii) Subset of a linearly independent is linearly independent.<br>
@@ -67,7 +67,7 @@ A non-empty subset <i>B</i> of <i>V</i> is said to be a basis if <i>B</i> is a l
 Let <i>V</i> be a vector space and <i>x</i>&isin;<i>V</i> and let <i>B</i>={<i>e</i><sub>1</sub>, <i>e</i><sub>2</sub>} be a basis. Then <i>x</i>=<i>αe</i><sub>1</sub>+<i>βe</i><sub>2</sub>, for some <i>α, β</i>&isin;<i>F</i>. These scalars <i>α</i> and <i>β</i> are called the co-ordinates of <i>x</i> w.r.t. the basis {<i>e</i><sub>1</sub>, <i>e</i><sub>2</sub>} as shown in the Fig.5.</span> <br>
 
 ![Co-ordinates](images/exp5image5.PNG "Co-ordinates")<br>
-#### <span style="font-family: 'Times New Roman'; font-size: 22px;">4.1. Examples:</span>
+#### <span style="font-family: 'Times New Roman'; font-size: 22px;">4.1. Example:</span>
 <span style="font-family: 'Times New Roman'; font-size: 22px;">Let <i>R</i><sup>2</sup> be the vector space over <i>R</i>.</span>
 
 <span style="font-family: 'Times New Roman'; font-size: 22px;">1. Consider a basis <i>B</i>={(1, 1), (1, 0)} of the vector space <i>R</i><sup></sup> over <i>R</i>. Then (2, 3)&isin;<i>R</i><sup>2</sup> can be written as (2, 3)=<i>α</i>(1, 1)+<i>β</i>(1, 0). This implies that <i>α</i>=3 and <i>β</i>=-1 Thus co-ordinates of (2, 3) w.r.t. the basis <i>B</i> are 3, -1.
