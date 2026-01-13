@@ -12,7 +12,7 @@ Similarly, to show that <i>S</i>={<i>a, b, c</i>}⊆<i>V</i> is linearly indepen
 <span style="font-family: 'Times New Roman'; font-size: 22px;">General method to show linear independence is provided in the proposition given below.</span><br>
 ![Linearly independent set](images/exp4newimage2.PNG "Linearly independent set")
 
-#### <span style="font-family: 'Times New Roman'; font-size: 22px;">1.3. Proposition:</span>
+<span style="font-family: 'Times New Roman'; font-size: 22px;"><b>1.3. Proposition:</b></span>
 <span style="font-family: 'Times New Roman'; font-size: 22px;">Let &straightphi;≠<i>S</i>⊆<i>V</i>. Then <i>S</i> is linearly independent if and only if [<i>α</i><sub>1</sub><i>x</i><sub>1</sub>+ <i>α</i><sub>2</sub><i>x</i><sub>2</sub>+ …+<i>α</i><sub><i>n</i></sub><i>x</i><sub><i>n</i></sub>=0 &#8658; <i>α</i><sub><i>i</i></sub>=0, for all <i>i</i>=1, 2, …, <i>n</i>; where <i>α</i><sub>1</sub>, <i>α</i><sub>2</sub>, ..., <i>α</i><sub><i>n</i></sub>&isin;<i>F</i>, <i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>, …, <i>x</i><sub><i>n</i></sub>&isin;<i>S</i>].</span>
 #### <span style="font-family: 'Times New Roman'; font-size: 22px;">Proof: Sufficient part:</span>
 <span style="font-family: 'Times New Roman'; font-size: 22px;">Let <i>α</i><sub><i>i</i></sub>=0, for all <i>i</i>=1, 2, …,<i>n</i>;
