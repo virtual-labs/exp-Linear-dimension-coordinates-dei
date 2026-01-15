@@ -62,8 +62,8 @@ Justification: Let <i>α</i>(1)+<i>β</i>(<i>x</i>)+<i>γ</i>(<i>x</i><sup>2</su
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">2.1. Example:</span>**
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">1. Let <i>S</i> be the linearly independent set as given in Example 5 (i). It can be seen that <i>S</i> spans <i>R</i><sup>3</sup>. Hence <i>S</i> is a basis for <i>R</i><sup>3</sup>.<br>
-2. Let <i>S</i> be the linearly independent set as given in Example 5 (ii). It can be seen that <i>S</i> spans <i>P</i><sub>2</sub>(<i>x</i>). Hence <i>S</i> is a basis for <i>P</i><sub>2</sub>(<i>x</i>). <br>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">1. Let <i>S</i> be the linearly independent set as given in Example 1.5 (i). It can be seen that <i>S</i> spans <i>R</i><sup>3</sup>. Hence <i>S</i> is a basis for <i>R</i><sup>3</sup>.<br>
+2. Let <i>S</i> be the linearly independent set as given in Example 1.5 (ii). It can be seen that <i>S</i> spans <i>P</i><sub>2</sub>(<i>x</i>). Hence <i>S</i> is a basis for <i>P</i><sub>2</sub>(<i>x</i>). <br>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">3. Dimension:</span>**
 
@@ -72,8 +72,8 @@ Justification: Let <i>α</i>(1)+<i>β</i>(<i>x</i>)+<i>γ</i>(<i>x</i><sup>2</su
 ![Dimension](images/exp4image4.PNG "Dimension")<br>
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">3.1. Example:</span>**
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">1. In Example 5 (i) the Dim of <i>S</i> is 3.<br>
-2. In Example 5 (ii) the Dim of <i>S</i> is 3. </span>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">1. In Example 1.5 (i) the Dim of <i>S</i> is 3.<br>
+2. In Example 1.5 (ii) the Dim of <i>S</i> is 3. </span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">3.2. Properties of basis and dimension:</span>**
 
