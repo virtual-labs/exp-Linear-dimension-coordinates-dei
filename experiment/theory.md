@@ -44,7 +44,7 @@ Justification: <i>a</i>(1, 2)+<i>b</i>(1, 0)=(0, 0) ⇒ (<i>a</i>, 2<i>b</i>)+(<
 
 <span style="font-family: 'Times New Roman'; font-size: 22px;">(i) Consider the vector space <i>R</i><sup>3</sup> over <i>R</i>. Then <i>S</i>={(1, 0, 0), (0, 1, 0), (0, 0, 1)} is linearly independent.<br>
 Justification: Let <i>α</i>(1, 0, 0)+<i>β</i>(0, 1, 0)+<i>γ</i>(0, 0, 1)=0; for <i>α, β, γ</i>&isin;<i>R</i>. By solving this we get <i>α</i>=0, <i>β</i>=0, <i>γ</i>=0 which implies by definition, that <i>S</i> is linearly independent.<br>
-(ii.) Consider the vector space <i>P</i><sub>2</sub>(<i>x</i>) over <i>R</i>. Then <i>S</i>={1, <i>x</i>, <i>x</i><sup>2</sup>+1} is linearly independent.<br>
+(ii) Consider the vector space <i>P</i><sub>2</sub>(<i>x</i>) over <i>R</i>. Then <i>S</i>={1, <i>x</i>, <i>x</i><sup>2</sup>+1} is linearly independent.<br>
 Justification: Let <i>α</i>(1)+<i>β</i>(<i>x</i>)+<i>γ</i>(<i>x</i><sup>2</sup>+1)=0; for <i>α, β, γ</i>&isin;<i>R</i>. By solving this we get <i>α</i>=0, <i>β</i>=0, <i>γ</i>=0 which implies by definition, that <i>S</i> is linearly independent.</span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">1.6. Properties of linearly independent and linearly dependent sets:</span>**
@@ -62,8 +62,8 @@ Justification: Let <i>α</i>(1)+<i>β</i>(<i>x</i>)+<i>γ</i>(<i>x</i><sup>2</su
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">2.1. Example:</span>**
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">1. Let <i>S</i> be the linearly independent set as given in Example 1.5 (i). It can be seen that <i>S</i> spans <i>R</i><sup>3</sup>. Hence <i>S</i> is a basis for <i>R</i><sup>3</sup>.<br>
-2. Let <i>S</i> be the linearly independent set as given in Example 1.5 (ii). It can be seen that <i>S</i> spans <i>P</i><sub>2</sub>(<i>x</i>). Hence <i>S</i> is a basis for <i>P</i><sub>2</sub>(<i>x</i>). <br>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">(i) Let <i>S</i> be the linearly independent set as given in Example 1.5 (i). It can be seen that <i>S</i> spans <i>R</i><sup>3</sup>. Hence <i>S</i> is a basis for <i>R</i><sup>3</sup>.<br>
+(ii) Let <i>S</i> be the linearly independent set as given in Example 1.5 (ii). It can be seen that <i>S</i> spans <i>P</i><sub>2</sub>(<i>x</i>). Hence <i>S</i> is a basis for <i>P</i><sub>2</sub>(<i>x</i>). <br>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">3. Dimension:</span>**
 
@@ -72,15 +72,15 @@ Justification: Let <i>α</i>(1)+<i>β</i>(<i>x</i>)+<i>γ</i>(<i>x</i><sup>2</su
 ![Dimension](images/exp4image4.PNG "Dimension")<br>
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">3.1. Example:</span>**
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">1. In Example 1.5 (i) the Dim of <i>S</i> is 3.<br>
-2. In Example 1.5 (ii) the Dim of <i>S</i> is 3. </span>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">(i) In Example 1.5 a. the Dim of <i>S</i> is 3.<br>
+(ii) In Example 1.5 b. the Dim of <i>S</i> is 3. </span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">3.2. Properties of basis and dimension:</span>**
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">1. Let <i>V</i> have a finite basis. Then every basis for <i>V</i> contains the same number of vectors.<br>
-2. If a basis of <i>V</i> has <i>n</i> elements, then any subset of <i>V</i> having <i>n</i>-1 elements does not span <i>V</i>.<br>
-3. If a basis has <i>n</i> elements, then any subset of <i>V</i> having <i>n</i>+1 elements is linearly dependent.<br>
-4. Let <i>B</i> be a subset of <i>V</i>. Then the following are equivalent.<br>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">(i) Let <i>V</i> have a finite basis. Then every basis for <i>V</i> contains the same number of vectors.<br>
+(ii) If a basis of <i>V</i> has <i>n</i> elements, then any subset of <i>V</i> having <i>n</i>-1 elements does not span <i>V</i>.<br>
+(iii) If a basis has <i>n</i> elements, then any subset of <i>V</i> having <i>n</i>+1 elements is linearly dependent.<br>
+(iv) Let <i>B</i> be a subset of <i>V</i>. Then the following are equivalent.<br>
 &emsp; a. <i>B</i> is basis.<br>
 &emsp; b. <i>B</i> is a minimal generating set, that is no proper subset of <i>B</i> can generate <i>V</i>.<br>
 &emsp; c. <i>B</i> is a maximal linearly independent set.</span>
@@ -95,7 +95,7 @@ Let <i>V</i> be a vector space and <i>x</i>&isin;<i>V</i> and let <i>B</i>={<i>e
 
 <span style="font-family: 'Times New Roman'; font-size: 22px;">Let <i>R</i><sup>2</sup> be the vector space over <i>R</i>.</span>
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">1. Consider a basis <i>B</i>={(1, 1), (1, 0)} of the vector space <i>R</i><sup></sup> over <i>R</i>. Then (2, 3)&isin;<i>R</i><sup>2</sup> can be written as (2, 3)=<i>α</i>(1, 1)+<i>β</i>(1, 0). This implies that <i>α</i>=3 and <i>β</i>=-1 Thus co-ordinates of (2, 3) w.r.t. the basis <i>B</i> are 3, -1.
-<br>2. If <i>B</i>={<i>e</i><sub>1</sub>, <i>e</i><sub>2</sub>} is a basis of the vector space <i>R</i><sup>2</sup> over <i>R</i>, then<br>
-(i) The co-ordinates of <i>e</i><sub>1</sub> w.r.t. the basis <i>B</i> are 1, 0 since <i>e</i><sub>1</sub>=1.<i>e</i><sub>1</sub>+0.<i>e</i><sub>2</sub>.<br>
-(ii) The co-ordinates of <i>e</i><sub>2</sub> w.r.t. the basis <i>B</i> are 0, 1 since <i>e</i><sub>2</sub>=0.<i>e</i><sub>1</sub>+1.<i>e</i><sub>2</sub>.</span>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">(i) Consider a basis <i>B</i>={(1, 1), (1, 0)} of the vector space <i>R</i><sup></sup> over <i>R</i>. Then (2, 3)&isin;<i>R</i><sup>2</sup> can be written as (2, 3)=<i>α</i>(1, 1)+<i>β</i>(1, 0). This implies that <i>α</i>=3 and <i>β</i>=-1 Thus co-ordinates of (2, 3) w.r.t. the basis <i>B</i> are 3, -1.
+<br>(ii) If <i>B</i>={<i>e</i><sub>1</sub>, <i>e</i><sub>2</sub>} is a basis of the vector space <i>R</i><sup>2</sup> over <i>R</i>, then<br>
+a. The co-ordinates of <i>e</i><sub>1</sub> w.r.t. the basis <i>B</i> are 1, 0 since <i>e</i><sub>1</sub>=1.<i>e</i><sub>1</sub>+0.<i>e</i><sub>2</sub>.<br>
+b. The co-ordinates of <i>e</i><sub>2</sub> w.r.t. the basis <i>B</i> are 0, 1 since <i>e</i><sub>2</sub>=0.<i>e</i><sub>1</sub>+1.<i>e</i><sub>2</sub>.</span>
