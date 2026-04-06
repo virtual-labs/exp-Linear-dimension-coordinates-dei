@@ -49,8 +49,8 @@ Justification: Let <i>α</i>(1)+<i>β</i>(<i>x</i>)+<i>γ</i>(<i>x</i><sup>2</su
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">1.6. Properties of linearly independent and linearly dependent sets:</span>**
 
 <span style="font-family: 'Times New Roman'; font-size: 22px;">(i) Any set containing the zero vector is linearly dependent. In particular, {0} is linearly dependent. <br>
-(ii) Singleton set containing a non-zero vector is linearly independent. <br>
-(iii) Subset of a linearly independent is linearly independent.<br>
+(ii) Singleton containing a non-zero vector is linearly independent. <br>
+(iii) Subset of a linearly independent set is linearly independent.<br>
 (iv) Superset of a linearly dependent set is linearly dependent.<br></span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">2. Basis:</span>**
