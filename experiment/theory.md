@@ -55,7 +55,7 @@ Justification: Let <i>α</i>(1)+<i>β</i>(<i>x</i>)+<i>γ</i>(<i>x</i><sup>2</su
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">2. Basis:</span>**
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">A non-empty subset <i>B</i> of <i>V</i> is said to be a basis if <i>B</i> is a linearly independent set and spans <i>V</i>. A schematic representation of basis is provided in Fig.3.</span>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">A non-empty subset <i>B</i> of <i>V</i> is said to be a basis if <i>B</i> is linearly independent and spans <i>V</i>. A schematic representation of basis is provided in Fig.3.</span>
 
 ![Basis](images/exp4image3.PNG "Basis")<br>
 
