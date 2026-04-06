@@ -42,9 +42,9 @@ Justification: <i>a</i>(1, 2)+<i>b</i>(1, 0)=(0, 0) ⇒ (<i>a</i>, 2<i>b</i>)+(<
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">1.5. Example-II:</span>**
 
 <span style="font-family: 'Times New Roman'; font-size: 22px;">(i) Consider the vector space <i>R</i><sup>3</sup> over <i>R</i>. Then <i>S</i>={(1, 0, 0), (0, 1, 0), (0, 0, 1)} is linearly independent.<br>
-Justification: Let <i>α</i>(1, 0, 0)+<i>β</i>(0, 1, 0)+<i>γ</i>(0, 0, 1)=0; for <i>α, β, γ</i>&isin;<i>R</i>. By solving this we get <i>α</i>=0, <i>β</i>=0, <i>γ</i>=0 which implies by definition, that <i>S</i> is linearly independent.<br>
+Justification: Let <i>α</i>(1, 0, 0)+<i>β</i>(0, 1, 0)+<i>γ</i>(0, 0, 1)=0; for <i>α, β, γ</i>&isin;<i>R</i>. By solving this we get <i>α</i>=0, <i>β</i>=0, <i>γ</i>=0 which implies by definition that <i>S</i> is linearly independent.<br>
 (ii) Consider the vector space <i>P</i><sub>2</sub>(<i>x</i>) over <i>R</i>. Then <i>S</i>={1, <i>x</i>, <i>x</i><sup>2</sup>+1} is linearly independent.<br>
-Justification: Let <i>α</i>(1)+<i>β</i>(<i>x</i>)+<i>γ</i>(<i>x</i><sup>2</sup>+1)=0; for <i>α, β, γ</i>&isin;<i>R</i>. By solving this we get <i>α</i>=0, <i>β</i>=0, <i>γ</i>=0 which implies by definition, that <i>S</i> is linearly independent.</span>
+Justification: Let <i>α</i>(1)+<i>β</i>(<i>x</i>)+<i>γ</i>(<i>x</i><sup>2</sup>+1)=0; for <i>α, β, γ</i>&isin;<i>R</i>. By solving this we get <i>α</i>=0, <i>β</i>=0, <i>γ</i>=0 which implies by definition that <i>S</i> is linearly independent.</span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">1.6. Properties of linearly independent and linearly dependent sets:</span>**
 
