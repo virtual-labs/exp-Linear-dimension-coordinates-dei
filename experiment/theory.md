@@ -21,7 +21,6 @@ Similarly, to show that <i>S</i>={<i>a, b, c</i>}⊆<i>V</i> is linearly indepen
 <span style="font-family: 'Times New Roman'; font-size: 22px;">Let &straightphi;≠<i>S</i>⊆<i>V</i>. Then <i>S</i> is linearly independent if and only if [<i>α</i><sub>1</sub><i>x</i><sub>1</sub>+ <i>α</i><sub>2</sub><i>x</i><sub>2</sub>+ …+<i>α</i><sub><i>n</i></sub><i>x</i><sub><i>n</i></sub>=0 &#8658; <i>α</i><sub><i>i</i></sub>=0, for all <i>i</i>=1, 2, …, <i>n</i>; where <i>α</i><sub>1</sub>, <i>α</i><sub>2</sub>, ..., <i>α</i><sub><i>n</i></sub>&isin;<i>F</i>, <i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>, …, <i>x</i><sub><i>n</i></sub>&isin;<i>S</i>].</span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">Proof: Sufficient part:</span>**
-
 <span style="font-family: 'Times New Roman'; font-size: 22px;">Let <i>α</i><sub><i>i</i></sub>=0, for all <i>i</i>=1, 2, …,<i>n</i>;
 whenever <i>α</i><sub>1</sub><i>x</i><sub>1</sub>+ <i>α</i><sub>2</sub><i>x</i><sub>2</sub>+ …+<i>α</i><sub><i>n</i></sub><i>x</i><sub><i>n</i></sub>=0, where <i>α</i><sub>1</sub>, <i>α</i><sub>2</sub>, ..., <i>α</i><sub><i>n</i></sub>&isin;<i>F</i>, <i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>, …, <i>x</i><sub><i>n</i></sub>&isin;<i>S</i>. To the contrary, let <i>S</i> be linearly dependent. By definition of a linearly dependent set, there exists <i>x</i>&isin;<i>S</i>, such that <i>x</i>=<i>α</i><sub>1</sub><i>y</i><sub>1</sub>+ <i>α</i><sub>2</sub><i>y</i><sub>2</sub>+ …+ <i>α</i><sub><i>n</i></sub><i>y</i><sub><i>n</i></sub>, for some <i>α</i><sub>1</sub>, <i>α</i><sub>2</sub>, ..., <i>α</i><sub><i>n</i></sub>&isin;<i>F</i>, <i>y</i><sub>1</sub>, <i>y</i><sub>2</sub>, …, <i>y</i><sub><i>n</i></sub>&isin;<i>S</i>. Thus (-1)x+<i>α</i><sub>1</sub><i>y</i><sub>1</sub>+<i>α</i><sub>2</sub><i>y</i><sub>2</sub>+ …+ <i>α</i><sub><i>n</i></sub><i>y</i><sub><i>n</i></sub>=0. By hypothesis, -1=0. This is a contradiction.<br>
 <b>Necessary part:</b>
@@ -37,26 +36,26 @@ Justification: Clearly, (2, 7) is a linear combination of (0, 1), (1, 2) as
 (2, 7)=2(1, 2)+3(0, 1). Thus, <i>S</i> is linearly dependent. Notice that 2(1, 2)-3(0, 1)+1(2, 7)=0, i.e. a linear combination of elements of <i>S</i> is zero, but all the coefficients are not zero.<br>
 <b>Remark.</b> <i>a</i>(0, 1)+<i>b</i>(1, 2)+<i>c</i>(2, 7)=0 ⇒ (<i>b</i>+2<i>c</i>, <i>a</i>+2<i>b</i>+7<i>c</i>)=0 implies that <i>b</i>+2<i>c</i>=0 and <i>a</i>+2<i>b</i>+7<i>c</i>=0 which does not imply that <i>a</i>=<i>b</i>=<i>c</i>=0. Hence it does not determine whether <i>S</i> is linearly dependent or independent. It only gives a clue.<br><br>
 (ii) <i>S</i>={(1, 2),(1, 0)} is linearly independent. <br>
-Justification: <i>a</i>(1, 2)+<i>b</i>(1, 0)=(0, 0) ⇒ (<i>a</i>, 2<i>b</i>)+(<i>b</i>, 0)=(0, 0) ⇒ (<i>a</i>+<i>b</i>, 2<i>b</i>)=(0, 0). Thus <i>a</i>=0, <i>b</i>=0. Hence, both the coefficients are zero therefore, <i>S</i> is linearly independent.</span>
+Justification: <i>a</i>(1, 2)+<i>b</i>(1, 0)=(0, 0) ⇒ (<i>a</i>, 2<i>b</i>)+(<i>b</i>, 0)=(0, 0) ⇒ (<i>a</i>+<i>b</i>, 2<i>b</i>)=(0, 0)⇒ <i>a</i>=0, <i>b</i>=0 ⇒ <i>S</i> is linearly independent.</span>
 <br><br>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">1.5. Example-II:</span>**
 
 <span style="font-family: 'Times New Roman'; font-size: 22px;">(i) Consider the vector space <i>R</i><sup>3</sup> over <i>R</i>. Then <i>S</i>={(1, 0, 0), (0, 1, 0), (0, 0, 1)} is linearly independent.<br>
-Justification: Let <i>α</i>(1, 0, 0)+<i>β</i>(0, 1, 0)+<i>γ</i>(0, 0, 1)=0; for <i>α, β, γ</i>&isin;<i>R</i>. By solving this we get <i>α</i>=0, <i>β</i>=0, <i>γ</i>=0 which implies by definition, that <i>S</i> is linearly independent.<br>
+Justification: Let <i>α</i>(1, 0, 0)+<i>β</i>(0, 1, 0)+<i>γ</i>(0, 0, 1)=0; for <i>α, β, γ</i>&isin;<i>R</i>. By solving this we get <i>α</i>=0, <i>β</i>=0, <i>γ</i>=0 which implies by definition that <i>S</i> is linearly independent.<br>
 (ii) Consider the vector space <i>P</i><sub>2</sub>(<i>x</i>) over <i>R</i>. Then <i>S</i>={1, <i>x</i>, <i>x</i><sup>2</sup>+1} is linearly independent.<br>
-Justification: Let <i>α</i>(1)+<i>β</i>(<i>x</i>)+<i>γ</i>(<i>x</i><sup>2</sup>+1)=0; for <i>α, β, γ</i>&isin;<i>R</i>. By solving this we get <i>α</i>=0, <i>β</i>=0, <i>γ</i>=0 which implies by definition, that <i>S</i> is linearly independent.</span>
+Justification: Let <i>α</i>(1)+<i>β</i>(<i>x</i>)+<i>γ</i>(<i>x</i><sup>2</sup>+1)=0; for <i>α, β, γ</i>&isin;<i>R</i>. By solving this we get <i>α</i>=0, <i>β</i>=0, <i>γ</i>=0 which implies by definition that <i>S</i> is linearly independent.</span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">1.6. Properties of linearly independent and linearly dependent sets:</span>**
 
 <span style="font-family: 'Times New Roman'; font-size: 22px;">(i) Any set containing the zero vector is linearly dependent. In particular, {0} is linearly dependent. <br>
-(ii) Singleton set containing a non-zero vector is linearly independent. <br>
-(iii) Subset of a linearly independent is linearly independent.<br>
+(ii) Singleton containing a non-zero vector is linearly independent. <br>
+(iii) Subset of a linearly independent set is linearly independent.<br>
 (iv) Superset of a linearly dependent set is linearly dependent.<br></span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">2. Basis:</span>**
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">A non-empty subset <i>B</i> of <i>V</i> is said to be a basis if <i>B</i> is a linearly independent set and spans <i>V</i>. A schematic representation of basis is provided in Fig.3.</span>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">A non-empty subset <i>B</i> of <i>V</i> is said to be a basis if <i>B</i> is linearly independent and spans <i>V</i>. A schematic representation of basis is provided in Fig.3.</span>
 
 ![Basis](images/exp4image3.PNG "Basis")<br>
 
@@ -67,13 +66,13 @@ Justification: Let <i>α</i>(1)+<i>β</i>(<i>x</i>)+<i>γ</i>(<i>x</i><sup>2</su
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">3. Dimension:</span>**
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">Let <i>V</i> have a basis consisting of finitely many elements. Then the number of elements in the basis of <i>V</i> is called the dimension of the vector space <i>V</i> and is denoted by Dim. The dimension of {0} is defined to be zero as it is defined to be generated by &straightphi;. A schematic representation of dimension is provided in Fig.4.</span> <br>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">Let <i>V</i> have a basis consisting of finitely many elements. Then the number of elements in the basis of <i>V</i> is called the dimension of the vector space <i>V</i> and is denoted by Dim <i>V</i>. The dimension of {0} is defined to be zero as it is defined to be generated by &straightphi;. A schematic representation of dimension is provided in Fig.4.</span> <br>
 
 ![Dimension](images/exp4image4.PNG "Dimension")<br>
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">3.1. Example:</span>**
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">(i) In Example 1.5 a. the Dim of <i>S</i> is 3.<br>
-(ii) In Example 1.5 b. the Dim of <i>S</i> is 3. </span>
+<span style="font-family: 'Times New Roman'; font-size: 22px;">(i) In Example 1.5 a, Dim <i>S</i> is 3.<br>
+(ii) In Example 1.5 b, Dim <i>S</i> is 3. </span>
 
 **<span style="font-family: 'Times New Roman'; font-size: 22px;">3.2. Properties of basis and dimension:</span>**
 
@@ -95,7 +94,7 @@ Let <i>V</i> be a vector space and <i>x</i>&isin;<i>V</i> and let <i>B</i>={<i>e
 
 <span style="font-family: 'Times New Roman'; font-size: 22px;">Let <i>R</i><sup>2</sup> be the vector space over <i>R</i>.</span>
 
-<span style="font-family: 'Times New Roman'; font-size: 22px;">(i) Consider a basis <i>B</i>={(1, 1), (1, 0)} of the vector space <i>R</i><sup></sup> over <i>R</i>. Then (2, 3)&isin;<i>R</i><sup>2</sup> can be written as (2, 3)=<i>α</i>(1, 1)+<i>β</i>(1, 0). This implies that <i>α</i>=3 and <i>β</i>=-1 Thus co-ordinates of (2, 3) w.r.t. the basis <i>B</i> are 3, -1.
+<span style="font-family: 'Times New Roman'; font-size: 22px;">(i) Consider a basis <i>B</i>={(1, 1), (1, 0)} of the vector space <i>R</i><sup></sup> over <i>R</i>. Then (2, 3)&isin;<i>R</i><sup>2</sup> can be written as (2, 3)=<i>α</i>(1, 1)+<i>β</i>(1, 0). This implies that <i>α</i>=3 and <i>β</i>=-1 Thus co-ordinates of (2, 3) w.r.t. the basis <i>B</i> are 3 and -1.
 <br>(ii) If <i>B</i>={<i>e</i><sub>1</sub>, <i>e</i><sub>2</sub>} is a basis of the vector space <i>R</i><sup>2</sup> over <i>R</i>, then<br>
-a. The co-ordinates of <i>e</i><sub>1</sub> w.r.t. the basis <i>B</i> are 1, 0 since <i>e</i><sub>1</sub>=1.<i>e</i><sub>1</sub>+0.<i>e</i><sub>2</sub>.<br>
-b. The co-ordinates of <i>e</i><sub>2</sub> w.r.t. the basis <i>B</i> are 0, 1 since <i>e</i><sub>2</sub>=0.<i>e</i><sub>1</sub>+1.<i>e</i><sub>2</sub>.</span>
+a. The co-ordinates of <i>e</i><sub>1</sub> w.r.t. the basis <i>B</i> are 1 and 0 since <i>e</i><sub>1</sub>=1.<i>e</i><sub>1</sub>+0.<i>e</i><sub>2</sub>.<br>
+b. The co-ordinates of <i>e</i><sub>2</sub> w.r.t. the basis <i>B</i> are 0 and 1 since <i>e</i><sub>2</sub>=0.<i>e</i><sub>1</sub>+1.<i>e</i><sub>2</sub>.</span>
