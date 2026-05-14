@@ -86,64 +86,114 @@
 
 
 //******************************************************************************************** */
+function validateInteger(input){
+
+    let value = input.value.trim();
+
+    let error = document.getElementById("errorMsg");
+
+    // allow only integers
+    let regex = /^-?\d*$/;
+
+    input.classList.remove("invalid");
+    error.innerText = "";
+
+    // remove invalid characters instantly
+    if(!regex.test(value)){
+        input.value = value.slice(0, -1);
+        error.innerText = "⚠️ Only integer values from -4 and 9 are allowed.";
+        input.classList.add("invalid");
+        return;
+    }
+
+    // check range
+    if(value !== ""){
+
+        let num = parseInt(value);
+
+        if(num < -4 || num > 9){
+
+            error.innerText = "⚠️ Only integer values from -4 and 9 are allowed.";
+            input.classList.add("invalid");
+        }
+    }
+}
+
+
+
+
 
  let canvas = document.getElementById("vectorCanvas");
     let ctx = canvas.getContext("2d");
     const maxInput = 9; // Maximum allowed input value
 
     function checkDependence() {
-        let vec1 = document.getElementById("vector1").value.trim();
-        let vec2 = document.getElementById("vector2").value.trim();
 
-        if (!validateInput(vec1) || !validateInput(vec2)) {
-            alert("Please enter valid numeric values within the range [-9, 9] for both vectors.");
-            return;
-        }
+    let x1 = parseFloat(document.getElementById("x1").value);
+    let y1 = parseFloat(document.getElementById("y1").value);
+    let x2 = parseFloat(document.getElementById("x2").value);
+    let y2 = parseFloat(document.getElementById("y2").value);
 
-        let vec1Arr = vec1.split(",").map(Number);
-        let vec2Arr = vec2.split(",").map(Number);
-
-        let x1 = vec1Arr[0], y1 = vec1Arr[1];
-        let x2 = vec2Arr[0], y2 = vec2Arr[1];
-
-        let resultText = "", resultText2 = "", resultText3 = "";
-
-        if ((x1 === 0 && y1 === 0) || (x2 === 0 && y2 === 0)) {
-            resultText = "Linearly Dependent (Zero Vector Present)";
-            resultText2 = "<i>S</i> is LINEARLY DEPENDENT (Zero Vector Present)";
-        } 
-        else if (x1 * y2 === x2 * y1) {
-            reason = "Reason";
-            resultText = "Linearly Dependent";
-            resultText2 = "<i>S</i> is LINEARLY DEPENDENT";
-            resultText3 = `<i>b</i> ≡ (${x2},${y2}) ∈ <i>L</i>({(${x1},${y1})})`;
-            
-        } else {
-            reason = "Reason";
-            resultText = "Linearly Independent";
-            resultText2 ="<i>S</i> is LINEARLY INDEPENDENT";
-            resultText3 = `<i>b</i> ≡ (${x2},${y2}) ∉ <i>L</i>({(${x1},${y1})})`;
-           
-        }
-
-        document.getElementById("reason1").innerText = reason;
-        document.getElementById("resultd").innerText = resultText;
-        document.getElementById("exmp3res").innerHTML = resultText2;
-        document.getElementById("exmpres3.1").innerHTML = resultText3;
-
-        drawVectors(x1, y1, x2, y2);
+    if (
+        !validateNumber(x1) ||
+        !validateNumber(y1) ||
+        !validateNumber(x2) ||
+        !validateNumber(y2)
+    ) {
+        alert("Only integer values from -4 and 9 are allowed.");
+        return;
     }
 
-    function validateInput(input) {
-        let values = input.split(",");
-        if (values.length !== 2) return false;
-        
-        for (let val of values) {
-            let num = Number(val.trim());
-            if (isNaN(num) || num < -maxInput || num > maxInput) return false;
-        }
-        return true;
+    let resultText = "", resultText2 = "", resultText3 = "", reason = "";
+
+    if ((x1 === 0 && y1 === 0) || (x2 === 0 && y2 === 0)) {
+
+       reason = "Reason";
+        resultText = "Linearly Dependent";
+        resultText2 = "<i>S</i> is LINEARLY DEPENDENT";
+        resultText3 = `(0, 0) ∈ <i>S</i>`;
+
     }
+    else if (x1 * y2 === x2 * y1) {
+
+        reason = "Reason";
+        resultText = "Linearly Dependent";
+        resultText2 = "<i>S</i> is LINEARLY DEPENDENT";
+        resultText3 = `<i>b</i> ≡ (${x2}, ${y2}) ∈ <i>L</i>({(${x1}, ${y1})})`;
+
+    }
+    else {
+
+        reason = "Reason";
+        resultText = "Linearly Independent";
+        resultText2 = "<i>S</i> is LINEARLY INDEPENDENT";
+        resultText3 = `<i>b</i> ≡ (${x2}, ${y2}) ∉ <i>L</i>({(${x1}, ${y1})})`;
+
+    }
+
+    document.getElementById("reason1").innerText = reason;
+    document.getElementById("resultd").innerText = resultText;
+    document.getElementById("exmp3res").innerHTML = resultText2;
+    document.getElementById("exmpres3.1").innerHTML = resultText3;
+
+    drawVectors(x1, y1, x2, y2);
+}
+
+    function validateNumber(num) {
+
+    if (isNaN(num)) return false;
+
+    if (num < -maxInput || num > maxInput) return false;
+
+    // Check max 2 decimal places
+    let decimalPart = num.toString().split(".")[1];
+
+    if (decimalPart && decimalPart.length > 2) {
+        return false;
+    }
+
+    return true;
+}
 
     function drawVectors(x1, y1, x2, y2) {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
