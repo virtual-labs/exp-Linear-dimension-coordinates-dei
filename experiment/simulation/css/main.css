@@ -16,24 +16,26 @@
 }
 
     
-
+.ques{
+  font-size: 1.1rem;
+}
 .subbtn{
         height:auto;
         width:auto;
         background-color:#81cdc6;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         border: 1px solid teal;
         margin: 1rem 0.2rem 0.2rem 0.2rem;
     }
     button {
   font-size: 16px; /* Size of user-typed text */
-  
+  cursor: pointer;
   border: none;
   background-color: rgb(231, 226, 226);
 }
   input {
   font-size: 16px; /* Size of user-typed text */
-  width: 2.5rem;
+  width: 2rem;
   border: none;
   background-color: rgb(231, 226, 226);
 }
@@ -43,6 +45,14 @@ button::placeholder {
   color: rgb(117, 114, 114); /* Optional: make placeholder less bold */
 }
 
+.error{
+    color:red;
+    font-size:18px;
+}
+
+.invalid{
+    border:2px solid red;
+}
 
 
     label{
