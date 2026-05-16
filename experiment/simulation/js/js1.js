@@ -19,19 +19,19 @@
         document.getElementById('c4ld').src='images/c4ld.png';
     }
     function c5ld(){
-       document.getElementById('c5ld').innerHTML='CORRECT!<br> Reason:If <i>S</i>={0, <i>x, y</i>}, then 1.0 + 0.<i>x</i> + 0.<i>y</i> = 0';
+       document.getElementById('c5ld').innerHTML='CORRECT!<br> Reason: If <i>S</i>={0, <i>x, y</i>}, then 1.0 + 0.<i>x</i> + 0.<i>y</i> = 0';
        document.getElementById('c5li').innerHTML='';
    }
    function c5li(){
-       document.getElementById('c5li').innerHTML='INCORRECT!<br> Reason:If <i>S</i>={0, <i>x, y</i>}, then 1.0 + 0.<i>x</i> + 0.<i>y</i> = 0';
+       document.getElementById('c5li').innerHTML='INCORRECT!<br> Reason: If <i>S</i>={0, <i>x, y</i>}, then 1.0 + 0.<i>x</i> + 0.<i>y</i> = 0';
        document.getElementById('c5ld').innerHTML='';
    }
    function c1ld(){
-       document.getElementById('c1ld').innerHTML='CORRECT!<br> Reason:<i>S</i> is LINEARLY INDEPENDENT, by definition.';
+       document.getElementById('c1ld').innerHTML='CORRECT!<br> Reason: <i>S</i> is LINEARLY INDEPENDENT, by definition.';
        document.getElementById('c1li').innerHTML='';
    }
    function c1li(){
-       document.getElementById('c1li').innerHTML='INCORRECT!<br> Reason:<i>S</i> is LINEARLY INDEPENDENT, by definition.';
+       document.getElementById('c1li').innerHTML='INCORRECT!<br> Reason: <i>S</i> is LINEARLY INDEPENDENT, by definition.';
        document.getElementById('c1ld').innerHTML='';
    }
    function c3ld(){
