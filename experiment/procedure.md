@@ -8,7 +8,7 @@
 7.	In the next block, hands on practice is provided to construct a basis of <i>R</i><sup>2</sup>. <br>
 8.	In the first section, select the values of <i>x, y</i> to choose first element a of basis and click the “Geometry” button to observe the chosen point on the graph. <br>
 9.	Now select the values of <i>x</i><sub>1</sub>, <i>y</i><sub>1</sub> to choose <i>b</i> and click on “Geometry” button to observe both the points a and b together on the graph. <br>
-10.	Observe the basis thus constructed in the 3rd section of the block. <br>
+10.	Observe the basis thus constructed in the 3third section of the block. <br>
 11.	Next block provides a stepwise process to check whether a given nonempty subset <i>B</i> of <i>R</i><sup>2</sup> is a basis or not. <br>
 12.	Press “Click here” in Step 1, “Step 2” and “Step 3” buttons one after the other to understand the process for verification. <br>
-13.	In Step 3, hands on practice is also provided. To choose a subset <i>B</i> of <i>R</i><sup>2</sup>, select the values <i>u, v</i> and <i>w, x</i> and click on “Submit” to check whether the chosen subset <i>B</i> is a basis or not.</span>
+13.	In Step 3, hands on practice is also provided in the "Example" section. To choose a subset <i>B</i> of <i>R</i><sup>2</sup>, select the values <i>u, v</i> and <i>w, x</i> and click on “Submit” to check whether the chosen subset <i>B</i> is a basis or not.</span>
