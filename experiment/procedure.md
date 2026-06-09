@@ -11,4 +11,4 @@
 10.	Observe the basis thus constructed in the third section of the block. <br>
 11.	Next block provides a stepwise process to check whether a given nonempty subset <i>B</i> of <i>R</i><sup>2</sup> is a basis or not. <br>
 12.	Press “Click here” in Step 1, “Step 2” and “Step 3” buttons one after the other to understand the process for verification. <br>
-13.	In Step 3, hands on practice is also provided in the "Example" section. To choose a subset <i>B</i> of <i>R</i><sup>2</sup>, select the values <i>u, v</i> and <i>w, x</i> and click on “Submit” to check whether the chosen subset <i>B</i> is a basis or not.</span>
+13.	In Step 3, hands on practice is also provided in the "Example" section. In this section to choose a subset <i>B</i> of <i>R</i><sup>2</sup>, select the values <i>u, v</i> and <i>w, x</i> and click on “Submit” to check whether the chosen subset <i>B</i> is a basis or not.</span>
