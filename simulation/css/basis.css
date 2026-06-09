@@ -1,0 +1,210 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+}
+
+/* ================= HEADER ================= */
+
+.pagehead{
+  display: block;
+  text-align: center;
+  border: 1px solid #87ceeb;
+  background-color: #87ceeb;
+  padding: 0.2em;
+  margin: 0.5rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 4px
+}
+
+
+.example{
+  background-color: lightyellow;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  margin: 0.5rem;
+}
+
+.example p{
+  font-size: 18px;
+}
+
+.example {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.excol {
+  border-radius: 8px;
+  background-color: lightyellow;
+}
+
+.subbtn{
+     height:auto;
+        width:auto;
+        background-color:#81cdc6;
+        font-size: 1rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 600;
+        border: 1px solid teal;
+        margin: 0.5rem 0.2rem 0.2rem 0.2rem;
+        cursor:pointer;
+    }
+input {
+  font-size: 16px; /* Size of user-typed text */
+  width: 2.5rem;
+  border: none;
+  background-color: rgb(231, 226, 226);
+}
+
+#aDisplay, #aDisplay2, #aDisplay3{
+    background-color: yellow;
+}
+
+button{
+  cursor: pointer;
+  margin-left: 2.4rem;
+}
+
+canvas{
+   margin-left: 2.4rem;
+}
+
+.cons{
+  background-color: lightyellow;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  margin: 0.5rem;
+}
+
+.cons p{
+  font-size: 20px;
+}
+
+.construction {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.conscol {
+  border-radius: 8px;
+  background-color: lightyellow;
+}
+
+.conscol img{
+  height: 26vh;
+  width: auto;
+}
+
+.check{
+  background-color: lightyellow;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  margin: 0.5rem;
+
+  
+}
+
+.checkcondition {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr 1fr;
+  gap: 1rem;
+}
+
+.ckcol {
+  border-radius: 8px;
+  background-color: lightyellow;
+  font-size: 1.1rem;
+}
+
+.note{
+  text-align: center;
+  float: center;
+  margin: 1rem;
+  background-color: lightgray;
+}
+
+.previous{
+    display: block;
+    float:left;
+    background-color: #04AA6D;
+    color: white;
+    font-size: 18px;
+    margin-top: 0.5rem;
+    align-content: center;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    width:8rem;
+}
+.previous:hover {
+  background-color: #ada;
+  color: black;
+}
+
+
+@media (max-width: 768px) {
+
+  body{
+    padding: 0.5rem;
+  }
+
+  .pagehead{
+    font-size: 1.4rem;
+    padding: 0.6rem;
+  }
+
+  .example,
+  .cons,
+  .check{
+    padding: 0.8rem;
+  }
+
+  .example,
+  .construction,
+  .checkcondition{
+    grid-template-columns: 1fr;
+  }
+
+  .example p,
+  .cons p,
+  .ckcol{
+    font-size: 1rem;
+  }
+
+  ul{
+    padding-left: 1.2rem;
+  }
+
+  li{
+    line-height: 1.6;
+  }
+
+ 
+
+  .previous{
+    width: 100%;
+  }
+
+  input{
+    width: 3rem;
+    font-size: 1rem;
+  }
+
+  select{
+    width: auto;
+    max-width: 100%;
+  }
+
+  canvas{
+    max-width: 100%;
+    margin: 1rem;
+  }
+
+  h3{
+    font-size: 1.1rem;
+  }
+}

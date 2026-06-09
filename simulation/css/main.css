@@ -1,0 +1,68 @@
+.next{
+    background-color: #04AA6D;
+    color: white;
+    font-size: 18px;
+    margin-top: 0.5rem;
+    align-content: center;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    width:8rem;
+    float:right;
+}
+.next:hover {
+  background-color: #ada;
+  color: black;
+}
+
+    
+.ques{
+  font-size: 1.1rem;
+}
+.subbtn{
+        height:auto;
+        width:auto;
+        background-color:#81cdc6;
+        font-size: 0.9rem;
+        border: 1px solid teal;
+        margin: 1rem 0.2rem 0.2rem 0.2rem;
+    }
+    button {
+  font-size: 16px; /* Size of user-typed text */
+  cursor: pointer;
+  border: none;
+  background-color: rgb(231, 226, 226);
+}
+  input {
+  font-size: 16px; /* Size of user-typed text */
+  width: 2rem;
+  border: none;
+  background-color: rgb(231, 226, 226);
+}
+
+button::placeholder {
+  font-size: 14px; /* Size of placeholder text only */
+  color: rgb(117, 114, 114); /* Optional: make placeholder less bold */
+}
+
+.error{
+    color:red;
+    font-size:18px;
+}
+
+.invalid{
+    border:2px solid red;
+}
+
+
+    label{
+        font-size: 1.3rem;
+        
+    }
+    #resultd{
+        font-size: 1.3rem;
+    }
+
+    #btn1, #btn2, #btn3, #btn4, #btn5, #btn6, #btn7, #btn8, #btn9, #btn10, #btn11, #btn12{
+        width: 15rem;
+    }
